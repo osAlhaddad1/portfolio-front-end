@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأثير نبضة السكرول</title>
+    <style>
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    margin-top: 200px;
+}
+
+img {
+    transition: padding-top 0.3s ease, transform 0.3s ease; /* تأثير على البادينغ والسكال */
+    width: 500px;  /* حجم الصورة */
+    padding-top: 0px;  /* بداية البادينغ */
+    transform: scale(1);  /* البداية بحجم طبيعي */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="image" src="img/history.jpg" alt="Image">
+    </div>
+    <section class="mt-5 projects">
+      <div class="row mt-5">
+          <div class="col-md-7 col-12 mb-3 mb-sm-0">
+              <div class="card pro-title" data-aos="slide-right" >
+                  <div class="card-body">
+                      <p class="pt-5">By professionals ,<br>for professionals.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row  ">
+          <div class="col-12">
+              <div class="card project-slides1">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-6">
+                          <h5>Our projects</h5>
+                        </div>
+                        <div class="col-6">
+                          <button type="button">Start a project </button>
+                        </div>
+                     </div>
+                   </div>
+              </div>
+              <div class="card project-slides">
+                  <div class="card-body">
+                      <div class="row">
+                      <div class="col-4">
+                         <h3>FANATYXH</h3>
+                          <p>strengthens the bond between sports teams and fans by providing real-time match analysis,
+                              exclusive content, and personalized experiences. Integrating social media and augmented reality, 
+                              it boosts fan excitement on match days and keeps engagement year-round. 
+                              Fans can share screenshots, vote on outcomes, stay updated on events, and join discussions, 
+                              creating a vibrant community.
+                          </p>
+                      </div>
+                      <div class="col-8">
+                          <img src="img/fanatyxh/base-photo.jpeg"  alt="hh">
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card project-slides">
+                 <div class="card-body">
+                  <div class="row">
+                      <div class="col-4">
+                          <h3>LEXPERT</h3>
+                          <p>Guided by a strategic vision, the design team crafted a website masterpiece where user experience meets art. Each page,
+                               a vibrant canvas, showcases essential info seamlessly. Colors of health and nature harmonize with natural, evocative images,
+                                stirring emotions and memories.
+                               Elegantly integrated banners enhance allure and functionality, making every visit smooth, memorable, and delightful.</p>
+                      </div>
+                      <div class="col-8">
+                          <img src="img/lxpert/header.webp"  alt="hh">
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="card project-slides" >
+                 <div class="card-body">
+                  <div class="row">
+                      <div class="col-4">
+                          <h3>EASY COFFEE</h3>
+                          <p>The journey began with understanding the concept, conducting field-specific research, and developing a 
+                              comprehensive framework for the site. We engaged our social media followers in the design selection process by 
+                              allowing them to vote between two options. Ultimately, we created a website that successfully achieves our desired goals.                                                                                       In addition to the significant
+                              </p>
+                      </div>
+                      <div class="col-8">
+                          <img src="img/easyCoffee/base-photo.webp"  alt="hh">
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</body>
+<script>
+function triggerEffect() {
+    var image = document.getElementById('image');
+    
+    // إضافة بادينغ وتكبير الصورة
+    image.style.paddingTop = "10px";  // إضافة بادينغ 10px
+    image.style.transform = "scale(1.1)";  // تكبير الصورة
+    
+    // بعد مدة قصيرة، إرجاع الصورة إلى وضعها الطبيعي
+    setTimeout(function() {
+        image.style.paddingTop = "0px";  // إزالة البادينغ
+        image.style.transform = "scale(1)";  // إعادة الصورة إلى حجمها الطبيعي
+    }, 300);  // التأثير يستمر 300 ملي ثانية
+}
+
+
+</script>
+</html>

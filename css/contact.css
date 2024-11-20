@@ -1,0 +1,183 @@
+header .card-text {
+    padding-left: 750px;
+}
+header hr{
+   width: 65%;
+}
+.contact-us{
+    /* margin-top:100px; */
+    padding-bottom: 0px;
+}
+.contact{
+    display: flex;
+    white-space: normal;
+}
+.contact sub{
+    letter-spacing: 5px;
+    margin-left: 20px;
+}
+.contact-team-img{
+    margin-top: 10px;
+    margin-left: 500px;
+    width:45rem;
+    height:30rem;
+    border-radius: 64px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 50px;
+    align-items: start;
+    position: relative;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.form-grid > :nth-child(1) {
+    padding-right: 400px;
+}
+.form-grid > :nth-child(2) {
+    padding-left: 100px ;/* Adjust this value to match the desired offset */
+    padding-right: 300px;
+}
+.form-grid > :nth-child(3) {
+    padding-left: 200px ;
+    padding-right: 200px;/* Adjust this value to match the desired offset */
+}
+.form-grid > :nth-child(4) {
+    padding-left: 300px ;
+    padding-right: 100px;/* Adjust this value to match the desired offset */
+}
+.contact-form .form-grid{
+    grid-gap: 0px;
+    padding-top: 100px;
+}
+
+.contact-team .form-group {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+}
+
+.contact-col .form-group{
+    margin-bottom: 0px;
+    position: relative;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.contact-col .form-group:nth-child(2){
+    padding-left: 50px ;
+}
+.contact-col .form-group:nth-child(3){
+    padding-left: 100px ;
+}
+.contact-team label {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 2px;
+}
+.contact-form label{
+    padding-top: 50px;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-team .form-group input ,textarea {
+    width: calc(100% - 20px);
+    padding: 0px 10px 0px 40px;
+    background: transparent;
+    border: none;
+    /* border-bottom: 1px solid white; */
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 20px; /* الانزياح عن الحقل السابق */
+}
+.contact-form .form-group input ,textarea {
+    /* width: calc(100% - 20px); */
+    padding: 0px 10px 0px 40px;
+    background: transparent;
+    border: none;
+    /* border-bottom: 1px solid white; */
+    color: white;
+    font-size: 2rem;
+    margin-left: 20px; /* الانزياح عن الحقل السابق */
+}
+.contact-team{
+    /* background-color: rgba(0,0,0,0.4); */
+}
+.contact-form{
+    background-color: rgba(255,255,255,0.6);
+    height: 500px;
+    margin-bottom: 80px;
+}
+.contact-form .form-group input ,textarea{
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+.contact-form textarea{
+    margin-top: 105px;
+    margin-left: -90px;
+    width: calc(100% - 150px);
+    
+}
+.contact-form .form-group label{
+    color:#000;
+}
+.form-group  button {
+    background-color: inherit;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 32px;
+    border: #000 1px solid;
+    padding: 2px 25px;
+    color: #000;
+    text-align: center;
+    /* margin-top: 20px; */
+    /* float: inline-end; */
+    position: relative;
+    /* right: 200px; */
+    float: right;
+    margin-top: -100px;
+    margin-right: 150px;;
+}
+
+.form-group input:focus {
+    outline: none;
+    
+}
+
+/* .form-group a {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: white;
+     text-decoration: none; 
+    font-size: 1.5rem;
+    padding-right: 150px;
+    text-decoration: underline;
+    top: 3px;
+} */
+ .form-group a{
+    font-size: 1.5rem;
+    padding-left: 50px;
+    width: 600px;
+ }
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* .js-scroll {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    will-change: transform;
+} */

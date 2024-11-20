@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I_web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<canvas id="backgroundCanvas"></canvas>
+<div class="preloader">
+<!--    <img class="logo" src="img/logo.svg" alt="logo" >-->
+</div>
+<div id="magnifier"></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i id='t1' class="fa-solid fa-arrow-up"></i></button>
+<!-- <div class="icon-bar">
+    <a  href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+</div> -->
+<header >
+    <nav class="navbar">
+
+        <div class="navbar-toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-links test" id="navbar-links">
+            <li class="nav-item active"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a  href="about-us.html">AboutUs</a></li>
+            <li class="nav-item"><a  href="services.html">Services</a></li>
+            <li class="nav-item"><a  href="#">Blogs</a></li>
+            <li class="nav-item"><a  href="profile.html">Projects</a></li>
+            <li class="nav-item active" id="connect"><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <ul class="navbar-links test">
+            <li class="nav-item active"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="name">Os Al Haddad</div>
+
+    <div class="row">
+        <div class="col-8 mb-3 mb-sm-0">
+            <div class="card header-card" >
+                <div class="card-body">
+                    <h6 class="card-title" data-aos="slide-right" data-aos-duration="1000">CREATIVE FRONT-END DEVELOPER</h6>
+                    <p class="card-text pt-5" data-aos="fade-up" data-aos-delay="1500">
+                        We empower PME and creative agencies with </p><p data-aos="fade-up" data-aos-delay="2000">cutting-edge technology that supercharges</p>
+                         <p data-aos="fade-up" data-aos-delay="2500">their operations and digital presence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row state">
+        <div class="col-md-2 col-12 mb-3 mb-sm-0" data-aos="flip-down">
+            <h5>Statistics</h5>
+        </div>
+        <div class="col-md-3 col-6 mb-3 mb-sm-0" data-aos="flip-down">
+            <h2>15</h2>
+            <br>
+            <hr><hr class="progress-bar" data-target="25%">
+            <br>
+            <p>Completed projects</p>
+        </div>
+        <div class="col-md-3 col-6 mb-3 mb-sm-0 " data-aos="flip-down">
+            <h2>19</h2>
+            <br>
+            <hr><hr class="progress-bar" data-target="40%">
+            <br>
+            <p>Customers Help</p>
+        </div>
+        <div class="col-md-3 col-6 mb-3 mb-sm-0 " data-aos="flip-down">
+            <h2>80</h2>
+            <br>
+            <hr><hr class="progress-bar" data-target="70%">
+            <br>
+            <p>Swallowed Waffles</p>
+        </div>
+    </div>
+</header>
+<main>
+    
+    <div id="inner-menu" class="toggle-container">
+        <button id='main-button' class="toggle-button" onclick="toggleMenu()">
+            <i id='fa1' class="fa-solid fa-bars-staggered"></i>
+            <i id='fa2' class="fa-solid fa-close"></i>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html"  class="active">Home</a>
+            <a  href="about-us.html">AboutUs</a>
+            <a  href="services.html">Services</a>
+            <a  href="#">Blogs</a>
+            <a  href="profile.html" >Projects</a>
+            <a href="contact-us.html">ContactUs</a>
+        </div>
+    </div>
+<div class="container-fluid mt-5 pt-5">
+        <section class="services mt-5" >
+            <div class="col-12 mb-3 mb-sm-0" data-aos="slide-right">
+                <h5>Our Services</h5>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                    <div class="card" data-aos="fade-in" data-aos-duration="1000">
+                        <div class="card-body">
+                            <h2 data-aos="fade-up" data-aos-delay="1500">01 3D Websites </h2>
+                            <p class="pt-4" id="a-img1" data-aos="fade-up" data-aos-delay="2000">At our creative agency, we turn your visionary ideas into robust, 
+                                scalable software solutions. Seamless integration and stellar performance are at the heart
+                                 of our services, bringing your concepts to life in the most captivating way.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-5">
+<!--                        <img id="img1" src="img/img1.jpg" alt="service-1" class="img-thumbnail float-end service-img">-->
+                    </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-4">
+<!--                    <img id='img2' src="img/img2.jpg" alt="service-1" class="img-thumbnail float-end  service-img">-->
+                </div>
+                <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                    <div class="card float-end"  data-aos="fade-in" data-aos-duration="1000" style="margin-left: 300px">
+                        <div class="card-body">
+                            <h2 data-aos="fade-up" data-aos-delay="1000">01 Web/App Development</h2>
+                            <p class="pt-4" id='a-img2' data-aos="fade-up" data-aos-delay="1500">At our creative agency, we excel in developing stunning websites 
+                                and intuitive mobile apps that captivate and engage users. Our team blends cutting-edge 
+                                technology with innovative design to create digital solutions .
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="col-md-2 mb-3 mb-sm-0" data-aos="fade-right">-->
+<!--                    <button class="service-btn" type="button">Voir plus </button>-->
+<!--                </div>-->
+            </div>
+        </section>
+<!--        <section class="mt-5 text">-->
+<!--            <div class="row mt-5">-->
+<!--                <div class="col-md-6 col-12 mb-3 mb-sm-0">-->
+<!--                    <div class="card" data-aos="slide-right">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5>Approved by our customers</h5>-->
+<!--                            <p class="pt-5">Join the business leaders who work with us</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-6 mb-3 mb-sm-0" data-aos="slide-left">-->
+<!--                    <button type="button">Start a project </button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+       
+<!--        <section class="mt-5 clients">-->
+<!--            <div class="slider">-->
+<!--                    <div class="slide-track">-->
+<!--                        <div class="slide">-->
+<!--                            <img  id='slide-cabient' src="img/cabinet.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img src="img/lexpert.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img src="img/apaq.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img  class='slide-img-2' src="img/easyCoffee.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img src="img/lylas.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img class='slide-img-2' src="img/fanatyxh.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img  id='slide-cabient' src="img/cabinet.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img src="img/lexpert.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img src="img/apaq.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img  class='slide-img-2' src="img/easyCoffee.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img src="img/lylas.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <img class='slide-img-2' src="img/fanatyxh.png" height="100" width="250" alt="" />-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--            </div>-->
+<!--        </section>-->
+      
+<!--        <section class="mt-5 projects">-->
+<!--            <div class="row mt-5">-->
+<!--                <div class="col-md-7 col-12 mb-3 mb-sm-0">-->
+<!--                    <div class="card pro-title" data-aos="slide-right" >-->
+<!--                        <div class="card-body">-->
+<!--                            <p class="pt-5">By professionals ,<br>for professionals.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row  ">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="card project-slides1">-->
+<!--                        <div class="card-body">-->
+<!--                           <div class="row">-->
+<!--                              <div class="col-6">-->
+<!--                                <h5>My projects</h5>-->
+<!--                              </div>-->
+<!--                              <div class="col-6">-->
+<!--                                <button type="button">Start a project </button>-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                         </div>-->
+<!--                    </div>-->
+<!--                    <div class="card project-slides">-->
+<!--                        <div class="card-body">-->
+<!--                            <div class="row">-->
+<!--                            <div class="col-4">-->
+<!--                               <h3>La Céleste</h3>-->
+<!--                                <p>strengthens the bond between sports teams and fans by providing real-time match analysis,-->
+<!--                                    exclusive content, and personalized experiences. Integrating social media and augmented reality, -->
+<!--                                    it boosts fan excitement on match days and keeps engagement year-round. -->
+<!--                                    Fans can share screenshots, vote on outcomes, stay updated on events, and join discussions, -->
+<!--                                    creating a vibrant community.-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                            <div class="col-8">-->
+<!--                                <img src="img/fanatyxh/base-photo.jpeg"  alt="hh">-->
+<!--                            </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="card project-slides">-->
+<!--                       <div class="card-body">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-4">-->
+<!--                                <h3>LEXPERT</h3>-->
+<!--                                <p>Guided by a strategic vision, the design team crafted a website masterpiece where user experience meets art. Each page,-->
+<!--                                     a vibrant canvas, showcases essential info seamlessly. Colors of health and nature harmonize with natural, evocative images,-->
+<!--                                      stirring emotions and memories.-->
+<!--                                     Elegantly integrated banners enhance allure and functionality, making every visit smooth, memorable, and delightful.</p>-->
+<!--                            </div>-->
+<!--                            <div class="col-8">-->
+<!--                                <img src="img/lxpert/header.webp"  alt="hh">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                    <div class="card project-slides" >-->
+<!--                       <div class="card-body">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-4">-->
+<!--                                <h3>EASY COFFEE</h3>-->
+<!--                                <p>The journey began with understanding the concept, conducting field-specific research, and developing a -->
+<!--                                    comprehensive framework for the site. We engaged our social media followers in the design selection process by -->
+<!--                                    allowing them to vote between two options. Ultimately, we created a website that successfully achieves our desired goals.                                                                                       In addition to the significant-->
+<!--                                    </p>-->
+<!--                            </div>-->
+<!--                            <div class="col-8">-->
+<!--                                <img src="img/easyCoffee/base-photo.webp"  alt="hh">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <section class="mt-5 history">
+            <div class="row mt-5 text">
+                <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                    <div class="card" data-aos="slide-right">
+                        <div class="card-body" >
+                            <h5>My Projects</h5>
+                            <p class="pt-4">La Céleste</p>
+                            <p class="porject-description">potato potato potato</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-sm-0" data-aos="slide-right">
+                    <button type="button">Demo</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="team-slider">
+                    <div id="root">
+                        <div class="carousel">
+                          <div class="item"><img src="img/laceleste.png"></div>
+
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 history">
+            <div class="row mt-5 text">
+                <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                    <div class="card" data-aos="slide-right">
+                        <div class="card-body" >
+
+                            <p class="pt-4">The Three Graces</p>
+                            <p class="porject-description">potato potato potato</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-sm-0" data-aos="slide-right">
+                    <button type="button">Demo</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="team-slider">
+                    <div id="root">
+                        <div class="carousel">
+                          <div class="item"><img src="img/history.jpg"></div>
+<!--                          <div class="item"><img src="img/history.jpg"></div>-->
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 history">
+            <div class="row mt-5 text">
+                <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                    <div class="card" data-aos="slide-right">
+                        <div class="card-body" >
+
+                            <p class="pt-4">Dark Matter Museum</p>
+                            <p class="porject-description">potato potato potato</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-sm-0" data-aos="slide-right">
+                    <button type="button">Demo</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="team-slider">
+                    <div id="root">
+                        <div class="carousel">
+                          <div class="item"><img src="img/history.jpg"></div>
+<!--                          <div class="item"><img src="img/history.jpg"></div>-->
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="mt-5 history">
+            <div class="row mt-5 text">
+                <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                    <div class="card" data-aos="slide-right">
+                        <div class="card-body" >
+                            <h5>Our story</h5>
+                            <p class="pt-4">At I-Web we manage all aspects of web development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-sm-0" data-aos="slide-right">
+                    <button type="button">learn more</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="team-slider">
+                    <div id="root">
+                        <div class="carousel">
+                          <div class="item"><img src="img/history.jpg"></div>
+                          <div class="item"><img src="img/history.jpg"></div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!-- <div class="row u-img">
+                <div class="col-12" data-aos="zoom-in-down">
+                    <p class="pt-5">Témoignages clients </p>
+                    <hr><hr class="hr-above">
+                </div>
+            </div> -->
+            <!-- <div class="row u-img" data-aos="zoom-in-down">
+                <div class="col-12">
+                   <div class="card whoUs">
+                        <div class="card-body">
+                            <h2>Notre lait à nous</h2>
+                            <p class="pt-4"> Adrien nous a déployé la plateforme <u><b>Notre lait à nous</b></u> ainsi
+                                que créé un outil de validation de bannir dans le cadre d’un projet.
+                                Malgré des délais courts, Adrien et son équipe ont su se montrer très
+                                réactifs et souples. Belle collaboration !</p>
+                        </div>
+                       <div class="card-body">
+                           <h2>Notre lait à nous2</h2>
+                           <p class="pt-4"> Adrien nous a déployé la plateforme <u><b>Notre lait à nous</b></u> ainsi
+                               que créé un outil de validation de bannir dans le cadre d’un projet.
+                               Malgré des délais courts, Adrien et son équipe ont su se montrer très
+                               réactifs et souples. Belle collaboration !</p>
+                       </div>
+                       <div class="card-body">
+                           <h2>Notre lait à nous4</h2>
+                           <p class="pt-4"> Adrien nous a déployé la plateforme <u><b>Notre lait à nous</b></u> ainsi
+                               que créé un outil de validation de bannir dans le cadre d’un projet.
+                               Malgré des délais courts, Adrien et son équipe ont su se montrer très
+                               réactifs et souples. Belle collaboration !</p>
+                       </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        
+        <section class="veiws_slider">
+
+            <div class="veiws_slides">
+                <div class="slide">
+                    <div class="inner_content">
+                        <div class="row">
+                            <div class="col-6 view">
+                                <h1>Customer testimonials</h1>
+                                <p>Adrien nous a déployé la plateforme https://notrelaitanous.be/ ainsi que créé un outil de validation de
+                                    banner dans la cadre du même projet. Malgré des délais très courts, Adrien et son équipe se sont montrés
+                                    très réactifs et souples. Belle collaboration 😊
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <div class="row justify-content-center">
+                                    <img src="img/Pauline-Héraly.webp" class="img-fluid"> 
+                                </div>
+                                <div class="row">
+                                   <h2>Pauline Héraly</h2>
+                                   <p>Creative Agency CEO Air</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="inner_content">
+                        <div class="row">
+                            <div class="col-6 view">
+                                <h1>Customer testimonials</h1>
+                                <p>
+                                    Merci à Adrien et à son équipe pour le travail fourni pour notre site web.
+                                    Il a respecté le design proposé et je suis satisfaite de ses conseils pratiques.
+                                    Efficacité et disponibilité sont les grandes qualités de leur service. 🙏
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <div class="row justify-content-center">
+                                    <img src="img/julie.webp" class="img-fluid"> 
+                                </div>
+                                <div class="row">
+                                   <h2>Julie Delcourt</h2>
+                                   <p>Cabinet Deburges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="inner_content">
+                        <div class="row">
+                            <div class="col-6 view">
+                                <h1>Customer testimonials</h1>
+                                <p> 
+                                    La création du site a été faite avec beaucoup d’attention et le résultat
+                                    correspond parfaitement à mes attentes. Je recommande vivement !
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <div class="row justify-content-center">
+                                    <img src="img/dr.yanni-2.webp" class="img-fluid"> 
+                                </div>
+                                <div class="row">
+                                   <h2>Yanni Nicolas</h2>
+                                   <p>Docteur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="inner_content">
+                        <div class="row">
+                            <div class="col-6 view">
+                                <h1>Customer testimonials</h1>
+                                <p>
+                                    Merci à i-Web et toute leur équipe !
+                                    Même si les délais se sont un peu rallongés au cours du projet à cause de la
+                                    complexité du programme, je
+                                    suis hyper satisfait du résultat!
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <div class="row justify-content-center">
+                                    <img src="img/Thierry-Bachez.webp" class="img-fluid"> 
+                                </div>
+                                <div class="row">
+                                   <h2>Thierry Bachez</h2>
+                                   <p>Restaurant La Confluence - Administrateur délégué</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="inner_content">
+                        <div class="row">
+                            <div class="col-6 view">
+                                <h1>Customer testimonials</h1>
+                                <p>
+                                    Vous cherchez un PRO? Vous êtes à la bonne adresse 😉
+                                    Adrien est réactif, à l’écoute, disponible et compétent. Good job 👍
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <div class="row justify-content-center">
+                                    <img src="img/Thomas-Uyttebroeck.webp" class="img-fluid"> 
+                                </div>
+                                <div class="row">
+                                   <h2>Thomas Uyttebroeck</h2>
+                                   <p>Entreprise de chauffage - CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+
+    <section class="contact-us">
+        <div class="container-fluid contact-team" >
+            <form class="form-grid">
+            <div class="form-group">
+                <label for="company-phone" data-aos="fade-in" data-aos-duration="2000">PHONE</label>
+                <a href="tel:123-456-7890" data-aos="fade-in" data-aos-duration="2000">+32 478 40 22 91</a>
+            </div>
+            <div class="form-group">
+                <label for="company-location" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">LOCATION</label>
+                <a href="https://www.google.pl/maps/place/Rue+Ry+de+Brabant+58,+7170+Manage,+Belgium/@50.4848892,4.2544717,17z/data=!3m1!4b1!4m5!3m4!1s0x47c2312c5410c3f5:0x34ca6b7a14cb90ae!8m2!3d50.4848858!4d4.2566604"
+                target="_blank"  data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">Rue Ry de Brabant 58, 7170 Manage, Belgium</a>
+                <a href="https://www.google.pl/maps/place/Rue+Ry+de+Brabant+58,+7170+Manage,+Belgium/@50.4848892,4.2544717,17z/data=!3m1!4b1!4m5!3m4!1s0x47c2312c5410c3f5:0x34ca6b7a14cb90ae!8m2!3d50.4848858!4d4.2566604"
+                   target="_blank"  data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">Go to google map ↗</a>
+            </div>
+            <div class="form-group">
+                <label for="company-email" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1000">EMAIL</label>
+                <a href="mailto:info@i-web.be" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1000">info@i-web.be</a>
+            </div>
+            <div class="form-group">
+                <label for="company-tva" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1500">TVA</label>
+                <input type="text" id="company-tva" name="tva" value="BE0769 681 835" readonly
+                data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1500">
+            </div>
+            </form>
+        </div>
+        <div class="container-fluid contact-form">
+            <form class="row">
+                <div class="col-6 contact-col">
+                    <div class="form-group">
+                        <label for="email1" data-aos="fade-in" data-aos-duration="2000">EMAIL</label>
+                        <input type="email"  id="email1" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="name" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">NAME</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1000">PHONE</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                </div>
+               <div class="col-6 contact-col">
+                <div class="form-group">
+                    <label for="message" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1500">MESSAGE</label>
+                    <textarea rows="2" id="message" name="message"></textarea>
+                </div>
+
+               </div>
+               <div class="form-group">
+                    <button type="submit">SUBMIT<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</main>
+<!--<footer class="footer text-white pt-3">-->
+<!--    <div class="container-fluid">-->
+<!--        <div class="row first-footer">-->
+<!--            <div class="col-md-2">-->
+<!--                <img id="footer-logo" src="img/footer-logo.svg" alt="footer-logo"  >-->
+<!--            </div>-->
+<!--            <div class="col-md-2">-->
+<!--                <ul class="list-unstyled">-->
+<!--                    <li><a href="index.html" class="text-white">Home</a></li>-->
+<!--                    <li><a href="about-us.html" class="text-white">AboutUs</a></li>-->
+<!--                    <li><a href="services.html" class="text-white">Services</a></li>-->
+<!--                    <li><a href="#" class="text-white">Blogs</a></li>-->
+<!--                    <li><a href="profile.html" class="text-white">Projects</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-md-2">-->
+<!--                <h5>Address</h5>-->
+<!--                <p class="pt-3">Rue Ry de Brabant 58<br>7170 Bellecourt BE</p>-->
+<!--                <p class="pt-3">+32 478 40 22 91<br>info@i-web.be</p>-->
+<!--            </div>-->
+<!--            <div class="col-md-6 form-col">-->
+<!--                <h5>Contact Us</h5>-->
+<!--                <form>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="email">Email *</label>-->
+<!--                        <input type="email" class="form-control" id="email" placeholder="Enter Email">-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="phone">Phone *</label>-->
+<!--                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone">-->
+<!--                    </div>-->
+<!--                    <div class="form-group pt-2">-->
+<!--                        <button type="submit" class="btn btn-outline-light pl-5">Send</button>-->
+<!--                    </div>-->
+
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row mt-4 pt-3 copy">-->
+<!--            <div class="col-12">-->
+<!--                <p>© i-Web - digital agency 2024</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e1c1fbeb79.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/shader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+<script>
+    $(document).ready(function (){
+       $('#a-img1').on({
+           mouseover: function () {
+               $('#img1').fadeIn('slow');
+           },
+           mouseout: function () {
+               $('#img1').fadeOut('slow');
+           }
+       });
+        $('#a-img2').on({
+            mouseover: function () {
+                $('#img2').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img2').fadeOut('slow');
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('navbar-toggle');
+        const navbarLinks = document.getElementById('navbar-links');
+
+        toggleButton.addEventListener('click', function () {
+            navbarLinks.classList.toggle('active');
+        });
+    });
+</script>
+<script>
+    // Initialize Intersection Observer
+    const progressBars = document.querySelectorAll('.progress-bar');
+    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateProgressBars();
+        } else {
+          resetProgressBars();
+        }
+      });
+    }, { threshold: 0.5 });
+  
+    // Observe the progress container
+    observer.observe(document.querySelector('.state'));
+  
+    // Animate the progress bars
+    function animateProgressBars() {
+      progressBars.forEach(bar => {
+        const target = bar.getAttribute('data-target');
+        bar.style.width = target;
+        bar.textContent = target;
+      });
+    }
+  
+    // Reset the progress bars
+    function resetProgressBars() {
+      progressBars.forEach(bar => {
+        bar.style.width = '0';
+        bar.textContent = '';
+      });
+    }
+</script>
+
+
+  
+</body>
+</html>

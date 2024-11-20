@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I_web</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inner-style.css">
+    <link rel="stylesheet" href="css/easyCoffee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="preloader">
+    <img class="logo" src="img/logo.svg" alt="logo">
+</div>
+<canvas id="backgroundCanvas"></canvas>
+<div id="magnifier"></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- <div class="icon-bar">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+</div> -->
+<header>  
+    <div class="container-fluid apac">
+        <div class="row">
+            <div class="col-6">
+                <img class="logo" src="img/logo.svg" alt="logo">
+            </div>
+        </div>
+        <div class="row back-link">
+            <a href="profile.html">Back to work</a>
+        </div>
+        <div class="row">
+            <div class="col-4 owner-info" data-aos='zoom-in'>
+                <h4>Client</h4>
+                <p>fadi</p>
+                <h4>Deliverables</h4>
+                <p>Visual Identity
+                    <br>Landing page
+                    </p>
+                <p class="date">Date :12/9/2024 </p>
+            </div>
+            <div class="col-8 inner-project">
+                <div class="image-container" data-aos='zoom-in'>
+                    <div id="header-overlay"></div>
+                    <img src="img/easyCoffee/base-photo.webp" alt="hh">
+                </div>
+                <div class="Project-title" data-aos='zoom-in'>
+                    <h1>Easy Coffee</h1>
+                    <p>A company that specializes in renting coffee machines via e-commerce.<p>
+                </div>
+            </div>
+        </div>
+           
+    </div>
+</header>
+<main>
+    <div class="toggle-container">
+        <button id='main-button' class="toggle-button" onclick="toggleMenu()">
+            <i id='fa1' class="fa-solid fa-bars-staggered"></i>
+            <i id='fa2' class="fa-solid fa-close"></i>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a  href="about-us.html">AboutUs</a>
+            <a  href="services.html">Services</a>
+            <a  href="#">Blogs</a>
+            <a  href="profile.html">Projects</a>
+            <a href="contact-us.html">ContactUs</a>
+        </div>
+    </div>
+    <section class="inner-project-details">
+        <div class="details">
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Context</u>
+                    </h2>
+                    <p class="pt-2">
+                        Easy Coffee was seeking a creative digital agency to develop its visual 
+                        identity and manage the programming and operation of its e-commerce website.
+                    </p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Solution</u>
+                    </h2>
+                    <p class="pt-2">
+                        An integrated system was developed for the company that meets all its needs, using Odoo as the core system.
+                    </p>
+                    <p class="pt-1">
+                        It supports many of the required features such as customer management, orders, and invoices.
+                    </p>
+                    <p class="pt-1">
+                        Account management and inventory alerts.
+                    </p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Result</u>
+                    </h2>
+                    <p class="pt-2">
+                        We were able to enhance customer loyalty through a smart discount system for repeat purchases. 
+                    </p>
+                    <p class="pt-1">
+                        The system is flexibly designed to scale their business, giving them the ability
+                         to seamlessly add new products, machines and customers.”
+                    </p>
+                    <p class="pt-1">
+                        With real-time updates and low-inventory alerts, 
+                        the rental coffee machines ensure that they run efficiently, 
+                        minimizing unnecessary downtime and ensuring a great customer experience.
+                    </p>
+                    <p class="pt-1">
+                        These technology solutions have enabled the company to run its business efficiently and seamlessly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inner-project-img">
+        <div class="row  logos">
+            <div class="col-12">
+                <img class="card-img" src="img/easyCoffee/old-logo.svg" data-aos="fade-up">
+            </div>
+            <div class="col-12 logo-group">
+                <img class="card-img" src="img/easyCoffee/logo1.svg" data-aos="fade-up" data-aos-delay="500">
+                <img class="card-img" src="img/easyCoffee/logo2.svg" data-aos="fade-up" data-aos-delay="500">
+                <img class="card-img" src="img/easyCoffee/logo3.svg" data-aos="fade-up" data-aos-delay="500">
+                <img class="card-img" src="img/easyCoffee/logo4.svg" data-aos="fade-up" data-aos-delay="500">
+            </div>
+            <div class="col-12 last-logo">
+                <img class="card-img slide2" src="img/easyCoffee/base-logo.svg" data-aos="fade-up" data-aos-delay="500">
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                <div class="card strategy" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>STRATEGY</h1>
+                        <p class="pt-5">We've streamlined processes using Odoo, which provides:</p>
+                        <ul type="disk">
+                            <li>A user-friendly website Designed to showcase the company's products according to UI/UX rules.</li>
+                            <li>Customer accounts: Seamless account creation for users, facilitating future purchases.</li>
+                            <li>Discount system: A smart discount feature that rewards loyal customers 
+                                with automatic discounts based on their purchase history.</li>
+                            <li>Order management: A streamlined checkout process with order tracking available on the user's account dashboard</li>
+                            <li>Invoicing: Automatically generate invoices for every purchase,
+                                 with easy access to invoices through the user account or via email.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card img-card-1" data-aos='fade-down'>
+            <h1 id="title-easy" data-aos='fade-down'>Esay Coffee</h1>
+            <img src="img/easyCoffee/base-logo.svg" alt="logo-easy-coffee">
+        </div>
+        <div class="row mt-5 inner-title-2">
+            <div class="col-12 mb-3 mb-sm-0">
+                <div class="card" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>Efficient Coffee Machine Rental Management System</h1>
+                        <p class="pt-5">
+                            Comprehensive coffee machine rental management:
+                        </p>
+                        <p class="pt-2">
+                            Manage rental data: 
+                            A customized dashboard to handle machine rentals, tracking tenant information,
+                            machine numbers, rental duration, and locations.
+                        </p>
+                        <p class="pt-2">
+                            Inventory Tracking: 
+                            Inventory levels of coffee, milk and sugar 
+                            are monitored in each rented machine.
+                        </p>
+                        <p class="pt-2">
+                            Shortage alerts: 
+                            Automatic notifications are triggered when inventory 
+                            falls below a set limit, ensuring timely refills.
+                        </p>
+                        <p class="pt-2">
+                            Data synchronization: 
+                            Regular updates of machine data to reflect real-time 
+                            inventory and utilization statistics.
+                        </p>
+                        <p class="pt-2">
+                            Special orders and billing: 
+                            A separate process to handle special orders and invoices with ease.
+                        </p>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  projects">
+            <div class="col-12">
+                <!-- <div class="card project-slides1">  
+                </div> -->
+                <div class="card project-slides">
+                    <img class="card-img slide2" src="img/easyCoffee/slide1.webp">
+                </div>
+                <div class="card project-slides project-grid">
+                    <img class="card-img" src="img/easyCoffee/slide1b.webp" alt="Card image" data-aos="fade-down">
+                    <img class="card-img" src="img/easyCoffee/slide1a.webp" alt="Card image" data-aos="fade-down">
+                    <img class="card-img" src="img/easyCoffee/slide1c.webp" alt="Card image" data-aos="fade-down">
+                    <img class="card-img" src="img/easyCoffee/slide1d.webp" alt="Card image" data-aos="fade-down">
+                </div>
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="https://xn--notrelaitnous-xdb.be/" target="_blank">View Site</a>
+        </div>
+        <div class="row m-5">
+            <div class="col-md-7 col-12 mb-3 mb-sm-0">
+                <div class="card strategy" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>Coffee and Gourmet Coffee Distributor</h1>
+                        <p class="pt-5">
+                            EASY COFFEE delivers and installs the latest generation of connected coffee vending machines
+                             in All-inclusive Rental and provides you with a stock of initial consumables calculated according to your needs.
+                        </p>
+                        <p class="pt-2">
+                            Easy Coffee est active dans les distributeurs de café et fontaine à eau en entreprises.
+                            Fort de notre expérience dans le secteur depuis 1989, EASY COFFEE est la solution pour
+                             faciliter la fourniture d’excellents cafés en entreprise. 
+                        </p>
+                        <p class="pt-2">  
+                            Notre expérience nous permet de sélectionner les meilleurs
+                            distributeurs automatiques du marché alliant fiabilité, qualité, technologie et beauté.
+                        </p>
+                        <p class="pt-2"> 
+                            Nos distributeurs automatiques de cafés et nos fontaines à eau sur réseau sont
+                            placés en location, comprenant les entretiens et la maintenance technique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card distributor-photo" data-aos='fade-down'>
+        </div>
+        <div class="row container-fluid sell-operation">
+            <div class="col-8">
+                <div id="root">
+                    <div class="carousel">
+                      <div class="item"><img src="img/easyCoffee/1.webp"></div>
+                      <div class="item"><img src="img/easyCoffee/2.webp"></div>
+                      <div class="item"><img src="img/easyCoffee/3.webp"></div>
+                      <div class="item"><img src="img/easyCoffee/4.webp"></div>
+                      <div class="item"><img src="img/easyCoffee/5.webp"></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <img class="invoice-logo" src="img/easyCoffee/base-logo.svg" alt="logo-easy-coffee">
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="odoo.html">Next project</a>
+        </div>
+        <div class="card next-project" data-aos='fade-down'>
+            <div class="title" data-aos='zoom-in'>
+                <h1>Apaq-W</h1>
+                <p>A sustainable, healthy, biodiverse, and 
+                    affordable food system.<p>
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="profile.html">Back to work</a>
+        </div>
+    </section>
+    <div class="row container-fluid">
+        <div class="col-6">
+           <p class="last-p">We Would Love <br>To Work With You.</p>
+        </div>
+        <div class="col-6">
+        <div class="bottom">
+           <img src="img/apaq/circle-logo.webp" width="300px" height="300px" alt="Example Image" />
+        </div>
+       </div>
+     </div>
+</main>
+<footer class="footer text-white pt-3">
+    <div class="container-fluid">
+        <div class="row first-footer">
+            <div class="col-md-2">
+                <img id="footer-logo" src="img/footer-logo.svg" alt="footer-logo"  >
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="about-us.html" class="text-white">AboutUs</a></li>
+                    <li><a href="services.html" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Blogs</a></li>
+                    <li><a href="profile.html" class="text-white">Projects</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Address</h5>
+                <p class="pt-3">Rue Ry de Brabant 58<br>7170 Bellecourt BE</p>
+                <p class="pt-3">+32 478 40 22 91<br>info@i-web.be</p>
+            </div>
+            <div class="col-md-6 form-col">
+                <h5>Contact Us</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone">
+                    </div>
+                    <div class="form-group pt-2">
+                        <button type="submit" class="btn btn-outline-light pl-5">Send</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4 pt-3 copy">
+            <div class="col-12">
+                <p>© i-Web - digital agency 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e1c1fbeb79.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/shader-easyCoffee.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://assets.codepen.io/16327/GSDevTools3.min.js"></script>
+<script>
+  const animation = gsap.timeline({
+repeat: -1,
+repeatDelay: 0, // How long you want it to hold on the first item
+});
+
+// Clone the first item, add it to the end
+document.querySelector(".carousel").appendChild(document.querySelector(".carousel .item").cloneNode(true));
+
+const duration = 1.5; // How long each animation lasts
+const pause = 1.5; // How long the pause is on each word (besides the first)
+
+function init() {
+gsap.set(".carousel", {autoAlpha:1})
+
+//const items = document.querySelectorAll(".carousel .item");
+let items = gsap.utils.toArray(".carousel .item");
+const numItems = items.length - 1;
+
+items.forEach((item, i) => {
+    if(i) {
+        animation.from(item, {
+            y: "100%",
+    ease: 'power3.inOut',
+    duration: 1.5
+        }, "<")
+    }
+    
+    if(i !== numItems) {
+        animation.to(item, {
+            y: "-80%",
+    ease: 'power3.inOut',
+    duration: 1.5
+        }, `+=${pause}`)
+    }
+});  
+}
+
+init();
+
+</script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#a-img1').on({
+            mouseover: function () {
+                $('#img1').fadeIn('slow');
+            },
+            mouseout: function () {
+                $('#img1').fadeOut('slow');
+            }
+        });
+        $('#a-img2').on({
+            mouseover: function () {
+                $('#img2').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img2').fadeOut('slow');
+            }
+        });
+        $('#a-img3').on({
+            mouseover: function () {
+                $('#img3').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img3').fadeOut('slow');
+            }
+        });
+    });
+</script>
+<script>
+const headerOverlay = document.querySelector('#header-overlay');
+const imageContainer = document.querySelector('.inner-project');
+
+imageContainer.addEventListener('mousemove', (e) => {
+    const rect = imageContainer.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+
+    // نصف قطر الدائرة
+    const radius = 150;
+
+    // تحديد الحد الأدنى والأقصى للإحداثيات لمنع تجاوز الحدود
+    const maxX = rect.width - radius; // أقصى إحداثي X
+    const maxY = rect.height - radius; // أقصى إحداثي Y
+    const minX = radius; // أدنى إحداثي X
+    const minY = radius; // أدنى إحداثي Y
+
+    // منع تجاوز الدائرة للحدود
+    // if (x < minX) x = minX;
+    // if (x > maxX) x = maxX;
+    // if (y < minY) y = minY;
+    // if (y > maxY) y = maxY;
+
+    // تحديث موقع التدرج الدائري لإزالة الشفافية حول المؤشر
+    headerOverlay.style.maskImage = `radial-gradient(circle at ${x}px ${y}px, transparent ${radius}px, black ${radius + 1}px)`;
+});
+
+imageContainer.addEventListener('mouseleave', () => {
+    // إعادة الشفافية كما كانت عند خروج الماوس
+    headerOverlay.style.maskImage = 'none';
+});
+
+</script>
+<script>
+    $('document').ready(function(){
+     $('.testimonial-d-section .video-side .btn-container>svg').on('click', function () {
+         $('.testimonial-d-section .video-side .video-img').fadeOut();
+         $('.testimonial-d-section .video-side .video-1').trigger('play');
+         $(this).parent().fadeOut();
+     })
+     $('.testimonial-d-section .video-side .video-1').on('ended', function () {
+         $('.testimonial-d-section .video-side .video-img').fadeIn();
+         $('.testimonial-d-section .video-side .btn-container>svg').parent().fadeIn();
+     });
+    });
+ </script>
+</body>
+
+
+</html>

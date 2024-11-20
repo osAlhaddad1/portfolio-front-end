@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I_web</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inner-style.css">
+    <link rel="stylesheet" href="css/xpert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="preloader">
+    <img class="logo" src="img/logo.svg" alt="logo">
+</div>
+<canvas id="backgroundCanvas"></canvas>
+<div id="magnifier"></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- <div class="icon-bar">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+</div> -->
+<header>  
+    <div class="container-fluid apac">
+        <div class="row">
+            <div class="col-6">
+                <img class="logo" src="img/logo.svg" alt="logo">
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="profile.html">Back to work</a>
+        </div>
+        <div class="row">
+            <div class="col-4 owner-info">
+                <h4>Client</h4>
+                <p>fadi</p>
+                <h4>Deliverables</h4>
+                <p>Visual Identity
+                    <br>Landing page
+                    </p>
+                <p class="date">Date:14/8/2024</p>
+            </div>
+            <div class="col-8 inner-project">
+                <div class="image-container">
+                    <div id="header-overlay"></div>
+                    <img src="img/lxpert/header.webp" alt="hh">
+                </div>
+                <div class="Project-title">
+                    <h1>L-EXPERT</h1>
+                    <p>Your Real Estate Journey Starts Here<p>
+                </div>
+            </div>
+        </div>
+           
+    </div>
+</header>
+<main>
+    <div class="toggle-container">
+        <button id='main-button' class="toggle-button" onclick="toggleMenu()">
+            <i id='fa1' class="fa-solid fa-bars-staggered"></i>
+            <i id='fa2' class="fa-solid fa-close"></i>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a  href="about-us.html">AboutUs</a>
+            <a  href="services.html">Services</a>
+            <a  href="#">Blogs</a>
+            <a  href="profile.html" >Projects</a>
+            <a href="contact-us.html" class="active">ContactUs</a>
+        </div>
+    </div>
+    <section class="inner-project-details">
+        <div class="details">
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Context</u>
+                    </h2>
+                    <p class="pt-2">
+                        LXpert was in search of a digital agency proficient in
+                        articulating and showcasing its expertise and
+                        technical acumen.
+                    </p>
+                   
+                </div>
+            </div>
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Solution</u>
+                    </h2>
+                    <p class="pt-2">
+                        The journey began with understanding the concept,
+                        conducting field-specific research, and developing a
+                        comprehensive framework for the site. We engaged
+                        our social media followers in the design selection
+                        process by allowing them to vote between two
+                        options. Ultimately, we created a website that
+                        successfully achieves our desired goals.
+                    </p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Result</u>
+                    </h2>
+                    <p class="pt-2">
+                        In addition to the significant development in terms of
+                        their identity, we have also improved their digital
+                        presence and spread their expertise more widely.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="xpert-service">
+        <div class="row">
+            <div class="card expert-card-service mb-3" data-aos="fade-right">
+                  <h4>
+                    SERVICES PROPOSES
+                   </h4>
+                <div class="row pro-text">
+                  <div class="col-md-4">
+                    <h5 class="service-title underlined">États des lieux</h5>
+                  </div>
+                  <div class="col-md-4">
+                    <h5 class="service-title">Services expertise</h5>
+                  </div>
+                  <div class="col-md-4">
+                    <h5 class="service-title">Photos</h5>
+                  </div>
+                </div>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                        <p >
+                            -Entrée/Sortie<br>
+                            -Contre-Expertise<br>
+                            -Avant-Après travaux<br>
+                            -Trop stressant !<br><br>
+                            
+                            Pas de temps à perdre, la vie est trop courte<br>
+                            <b>Contactez-nous !</b>
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row second">
+            <div class="col-md-6">
+              <img src="img/lxpert/slide2a.webp" class="img-fluid " alt="..." data-aos="fade-left">
+            </div>
+            <div class="col-md-6">
+              <img id="img2" src="img/lxpert/slide2b.webp" class="img-fluid" alt="..." data-aos="fade-left">
+            </div>
+        </div>
+            <h1 data-aos="fade-up">WE ARE GLOBE-TROTTERS!</h1>
+    </section>
+    <section class="inner-project-img">
+        <div class="row m-5">
+            <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                <div class="card strategy" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>STRATEGY</h1>
+                            <p class="pt-5">Work to show the services in an easy and attractive way and display the implemented projects . 
+                             </p>
+                             <p class="pt-2"> Work on enhancing the user experience 
+                                By displaying LXpert's partners' opinions of the services and the story of dealing with them .</p>
+                            <p class="pt-2">The design shows elegance and luxury through the colors and fonts used for the texts.</p>
+                            <p class="pt-2">UX rules were also applied by voting for the best work and receiving feedback.</p>
+                            <p class="pt-2">We are constantly evolving and will not stop.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 mb-3 mb-sm-0 ">
+                  <img class="lines" src="img/lxpert/lines.png">
+            </div>
+        </div>
+        
+        <div class="card"  data-aos="fade-down">
+            <img class="card-img" src="img/lxpert/2.webp" alt="Card image">
+        </div>
+        <div class="row mt-5 inner-title-2">
+            <div class="col-12 mb-3 mb-sm-0">
+                <div class="card" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>A real estate expert </h1>
+                        <p class="pt-5">A real estate expert is a professional with extensive knowledge 
+                            and experience in the real estate industry. </p>
+                        <p class="pt-2">They provide valuable insights and services related to buying,
+                             selling, leasing, and managing properties. </p>
+                        <p class="pt-2">Here are some key roles and responsibilities of a real estate expert:
+                        </p>
+                        <p class="pt-2">Market Analysis: <br>
+                            They analyze market trends, property values, and economic 
+                            factors to provide accurate advice on property investments</p>
+                        <p class="pt-2">Property Evaluation: <br>
+                            They assess the condition and value of properties to help clients make informed decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  projects">
+            <div class="col-12">
+                <div class="card project-slides1">
+                    
+                </div>
+                
+                <div class="card project-slides worker">
+                    <div class="card-body">
+                        <div class="row">
+                            <h1>PARTENAIRES</h1>
+                          </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="img/lxpert/alicia.webp" style="width: 350px;height: 330px;">
+                                <h4 class="p-2">Alicia</h4>
+                            </div>
+                            <div class="col-8">
+                                <p class="subt1">Je tiens à exprimer ma plus grande satisfaction concernant les services de LXpert.</p>
+                                <p class="subt2 pt-1">En tant que jeune locataire confrontée à de nombreuses difficultés avec mon propriétaire, LXpert a su trouver des solutions rapides et des compromis justes.</p>
+                                <p class="subt3 pt-1">Elle a montré dès le début une considération sérieuse à mon égard, malgré mon jeune âge, et a fait preuve d'un professionnalisme exemplaire dans la gestion de mon contexte conflictuel.</p>
+                                <p class="subt4 pt-1">Grâce à son expertise et son écoute attentive, j'ai pu résoudre une situation complexe avec efficacité et sérénité. Je recommande vivement LXpert à toute personne ayant besoin d'une expertise immobilière de qualité.</p>
+                                <p class="subt5 pt-1">Merci encore pour votre aide précieuse !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card project-slides">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="whiskey-cards alignfull">
+                                <div class="whiskey-card" >
+                                    <img class="image image1" src="img/lxpert/slide1a.webp"> 
+                                    <div class="thebody">
+                                      <h6 class="thetitle title1">Vente d’un bien neuf</h6>
+                                    </div> 
+                                </div>
+                                <div class="whiskey-card">
+                                    <img class="image" src="img/lxpert/slide1b.webp">
+                                    <div class="thebody"> 
+                                        <h6 class="thetitle">Expertise vénale</h6>
+                                    </div> 
+                                </div>
+                                <div class="whiskey-card">
+                                    <img class="image" src="img/lxpert/slide1c.webp">
+                                    <div class="thebody"> 
+                                        <h6 class="thetitle">Location commerce</h6>
+                                    </div> 
+                                </div>
+                                <div class="whiskey-card">
+                                    <img class="image" src="img/lxpert/slide1d.webp">
+                                    <div class="thebody"> 
+                                        <h6 class="thetitle">État des lieux avant travaux</h6>
+                                    </div> 
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="card project-slides">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="whiskey-cards alignfull">
+                                <div class="whiskey-card" >
+                                    <img class="image image1" src="img/lxpert/slide2a.webp"> 
+                                    <div class="thebody">
+                                      <h6 class="thetitle title1">État des lieux d’entrée</h6>
+                                    </div> 
+                                </div>
+                                <div class="whiskey-card">
+                                    <img class="image" src="img/lxpert/slide2b.webp">
+                                    <div class="thebody"> 
+                                        <h6 class="thetitle">Location bien neuf</h6>
+                                    </div> 
+                                </div>
+                                <div class="whiskey-card">
+                                    <img class="image" src="img/lxpert/header.webp">
+                                    <div class="thebody"> 
+                                        <h6 class="thetitle">Expertise vénale</h6>
+                                    </div> 
+                                </div>
+                                <div class="whiskey-card">
+                                    <img class="image" src="img/lxpert/slide2d.webp">
+                                    <div class="thebody"> 
+                                        <h6 class="thetitle">État des lieux avant après travaux
+                                            Previous
+                                            </h6>
+                                    </div> 
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="https://lxpert.be" target="_blank">View Site</a>
+        </div>
+        <div class="row m-5">
+            <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                <div class="card strategy" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <p class="pt-5">Negotiation: <br>
+                            They negotiate terms and prices on behalf of clients to ensure favorable deals.
+                        </p>
+                        <p class="pt-2">Legal Knowledge: <br>
+                            They understand real estate laws and regulations, ensuring all transactions comply with legal requirements.</p>
+                        <p class="pt-2">Marketing: <br>
+                            They create marketing strategies to promote properties and attract potential buyers or tenants.</p>
+                        <p class="pt-2">Client Representation: <br>
+                            They represent clients in transactions, providing guidance and support throughout the process.</p>
+                        <p class="pt-2">Networking: <br>
+                            They have a network of contacts, including other real estate professionals, 
+                            contractors, and legal advisors, to facilitate smooth transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="fanatyxh.html">Next project</a>
+        </div>
+        <div class="card next-project" data-aos='fade-down'>
+            <div class="title" data-aos='zoom-in'>
+                <h1>FANATYXH</h1>
+                <p>A dedicated team from Belgium committed to achieving global reach.<p>
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="profile.html">Back to work</a>
+        </div>
+    </section>
+  <div class="row container-fluid">
+     <div class="col-6">
+        <p class="last-p">We Would Love <br>To Work With You.</p>
+     </div>
+     <div class="col-6">
+     <div class="bottom">
+        <img src="img/circle-logo.webp" width="300px" height="300px" alt="Example Image" />
+     </div>
+    </div>
+  </div>
+</main>
+<footer class="footer text-white pt-3">
+    <div class="container-fluid">
+        <div class="row first-footer">
+            <div class="col-md-2">
+                <img id="footer-logo" src="img/footer-logo.svg" alt="footer-logo"  >
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="about-us.html" class="text-white">AboutUs</a></li>
+                    <li><a href="services.html" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Blogs</a></li>
+                    <li><a href="profile.html" class="text-white">Projects</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Address</h5>
+                <p class="pt-3">Rue Ry de Brabant 58<br>7170 Bellecourt BE</p>
+                <p class="pt-3">+32 478 40 22 91<br>info@i-web.be</p>
+            </div>
+            <div class="col-md-6 form-col">
+                <h5>Contact Us</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone">
+                    </div>
+                    <div class="form-group pt-2">
+                        <button type="submit" class="btn btn-outline-light pl-5">Send</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4 pt-3 copy">
+            <div class="col-12">
+                <p>© i-Web - digital agency 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e1c1fbeb79.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/shader-xpert.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#a-img1').on({
+            mouseover: function () {
+                $('#img1').fadeIn('slow');
+            },
+            mouseout: function () {
+                $('#img1').fadeOut('slow');
+            }
+        });
+        $('#a-img2').on({
+            mouseover: function () {
+                $('#img2').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img2').fadeOut('slow');
+            }
+        });
+        $('#a-img3').on({
+            mouseover: function () {
+                $('#img3').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img3').fadeOut('slow');
+            }
+        });
+    });
+</script>
+<script>
+const headerOverlay = document.querySelector('#header-overlay');
+const imageContainer = document.querySelector('.inner-project');
+
+imageContainer.addEventListener('mousemove', (e) => {
+    const rect = imageContainer.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+
+    // نصف قطر الدائرة
+    const radius = 150;
+
+    // تحديد الحد الأدنى والأقصى للإحداثيات لمنع تجاوز الحدود
+    const maxX = rect.width - radius; // أقصى إحداثي X
+    const maxY = rect.height - radius; // أقصى إحداثي Y
+    const minX = radius; // أدنى إحداثي X
+    const minY = radius; // أدنى إحداثي Y
+
+    // منع تجاوز الدائرة للحدود
+    // if (x < minX) x = minX;
+    // if (x > maxX) x = maxX;
+    // if (y < minY) y = minY;
+    // if (y > maxY) y = maxY;
+
+    // تحديث موقع التدرج الدائري لإزالة الشفافية حول المؤشر
+    headerOverlay.style.maskImage = `radial-gradient(circle at ${x}px ${y}px, transparent ${radius}px, black ${radius + 1}px)`;
+});
+
+imageContainer.addEventListener('mouseleave', () => {
+    // إعادة الشفافية كما كانت عند خروج الماوس
+    headerOverlay.style.maskImage = 'none';
+});
+
+</script>
+</body>
+
+
+</html>

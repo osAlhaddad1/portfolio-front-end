@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="fadi">fadi</div>
+    <div class="fadi">ayl</div>
+    <div class="fadi">rami</div>
+<script>
+    let section=document.getElementsByClassName('fadi');
+       console.log(section)
+       console.log(Array.from(section))
+    Array.from(section).forEach(function (element) {
+        element.onclick = function () {
+            this.style.display = 'none';
+        };
+    });
+</script>
+</body>
+</html>

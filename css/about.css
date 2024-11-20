@@ -1,0 +1,212 @@
+header .card-text {
+    padding-right: 300px;
+   
+}
+.meet {
+    background: rgba(255, 255, 255, 0.3);
+    margin-top: 0px;
+    padding-bottom: 50px;
+}
+.meet h1{
+    padding-top:100px;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    align-items: start;
+    position: relative;
+}
+
+.team-member {
+    border: none;
+    border-radius: 32px;
+    width: 30rem;
+    height: 30rem;
+}
+
+.team-member .card-img-top {
+    border-radius: 32px;
+    height: inherit;
+}
+
+.team-member p {
+    color: #2e2c2c;
+    font-weight: bold;
+    margin-left: 60px;
+}
+.team-member h4{
+    margin-left: 60px;
+    padding-top: 5px;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.team-member .image-placeholder {
+    width: 32rem;
+    height: 30rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 32px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+.image-placeholder{
+    color: #000;
+}
+.apply-job{
+    margin-top: 190px;
+    color: #000;
+
+}
+.apply .image-placeholder {
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+    font-size: 3rem;
+}
+ 
+
+
+/* إضافة الانزياح للعمود الثاني بأكمله */
+.team-grid > :nth-child(2n) {
+    position: relative;
+    top: 300px;  /* Adjust this value to match the desired offset */
+}
+.our-story{
+    padding-bottom: 100px;
+}
+.our-story .card{
+    margin-left: 80px;
+    border-radius: 64px;
+    padding: 20px 40px;
+    margin-top: 50px;
+    width:45rem;
+    height:auto;
+    background-color: rgba(255,255,255,0.5);
+}
+.our-story p{
+    font-size: 20px;
+    color:#fff;
+}
+.stories .card .card-body p{
+    padding-right: 80px;
+    padding-left: 40px;
+}
+.stories > :nth-child(1) .story-img{
+    margin-left: 450px;
+    margin-top: -90px;
+}
+.stories > :nth-child(2){
+    margin-left: 250px;
+}
+.stories > :nth-child(2) .story-img{
+    margin-left: 450px;
+    margin-top: -60px;
+}
+
+.stories > :nth-child(3){
+    margin-left: 450px;
+}
+.stories > :nth-child(3) .story-img{
+    margin-left: 250px;
+    margin-top: -70px;
+}
+.stories > :nth-child(3) hr{
+    width: 500px;
+}
+.story-img{
+    width:30rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    position: fixed;
+}
+.story-img img{
+    border: none;
+    border-radius: 64px;
+    width:60rem;
+    height: 30rem;
+}
+
+
+.ourTeam{
+    padding:0px 200px;
+}
+
+.ourTeam-slides{
+   /* height: 70vh;*/
+    margin-top: -20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #000;
+    position: sticky;
+    top:100px;
+}
+.ourTeam-slides .card-body{
+    color:#000;
+}
+.ui-accordion{
+    padding: 0px 200px;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .bottom{
+    padding-left: 350px;
+    padding-bottom: 100px;
+  }
+  .bottom img {
+      height: 50%;
+      animation: rotate 7s infinite linear;
+  }
+  /* .last-p{
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 50px;
+  } */
+  #last-logo{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: calc(100% - 80px);
+    /* top: 10px; */
+    margin-top: 40px;
+  }
+
+  .pulse-img {
+    transition: transform 1s ease-in-out;
+  }
+  
+  .pulse-img.pulse {
+    animation: pulse 0.8s ease;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  

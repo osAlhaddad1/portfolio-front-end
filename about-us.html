@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I_web</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inner-style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="preloader">
+    <img class="logo" src="img/logo.svg" alt="logo" >
+</div>
+<canvas id="backgroundCanvas"></canvas>
+<div id="magnifier"></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- <div class="icon-bar">
+    <a  href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+</div> -->
+<header>
+     <div class="container-fluid">
+         <div class="row">
+             <div class="col-6">
+                 <img  class="logo"  src="img/logo.svg" alt="logo" >
+             </div>
+        </div>
+         <div class="row">
+             <div class="card text-white  pt-5">
+                 <div class="card-body" >
+                     <h5 class="card-title" data-aos="slide-right" data-aos-duration="2000">ABOUT US.</h5>
+                     <hr class="mt-2">
+                     <p class="card-text pt-2" data-aos="slide-left" data-aos-duration="2000">
+                        The creative minds behind I-WEB, a team of passionate designers and innovators 
+                        dedicated to crafting exceptional user experiences.
+                     </p>
+                 </div>
+             </div>
+         </div>
+     </div>
+</header>
+<main>
+    <!-- زر التوغل والقائمة -->
+    <div class="toggle-container">
+        <button id='main-button' class="toggle-button" onclick="toggleMenu()">
+            <i id='fa1' class="fa-solid fa-bars-staggered"></i>
+            <i id='fa2' class="fa-solid fa-close"></i>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a  href="about-us.html"  class="active">AboutUs</a>
+            <a  href="services.html">Services</a>
+            <a  href="#">Blogs</a>
+            <a  href="profile.html">Projects</a>
+            <a href="contact-us.html">ContactUs</a>
+        </div>
+    </div>
+    <section class="meet">
+        <h1  data-aos="slide-right">Meet Our Team</h1>
+        <hr>
+        <div class="container">
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-down">
+                    <div class="image-placeholder">
+                        <img class="card-img-top" src="img/person.webp" alt="Card image cap">
+                    </div>
+                    <h4>Adrian</h4>
+                    <p>Big Boss</p>
+                </div>
+                <div class="team-member" data-aos="fade-down">
+                    <div class="image-placeholder">
+                        <img class="card-img-top" src="img/person.webp" alt="Card image cap">
+                    </div>
+                    <h4>Lama</h4>
+                    <p>Project Manager</p>
+                </div>
+                <div class="team-member" data-aos="fade-down">
+                    <div class="image-placeholder">
+                        <img class="card-img-top" src="img/person.webp" alt="Card image cap">
+                    </div>
+                    <h4>Ayham</h4>
+                    <p>Manager</p>
+                </div>
+                <div class="team-member" data-aos="fade-down">
+                    <div class="image-placeholder">
+                        <img class="card-img-top" src="img/person.webp" alt="Card image cap">
+                    </div>
+                    <h4>LANA</h4>
+                    <p>Designer</p>
+                </div>
+                <div class="team-member" data-aos="fade-down">
+                    <div class="image-placeholder">
+                        <img class="card-img-top" src="img/person.webp" alt="Card image cap">
+                    </div>
+                    <h4>Fadi</h4>
+                    <p>Code Ninja</p>
+                </div>
+                <div class="team-member" data-aos="fade-down">
+                    <div class="image-placeholder">
+                        <img class="card-img-top" src="img/person.webp" alt="Card image cap">
+                    </div>
+                    <h4>Zena</h4>
+                    <p>Searcher</p>
+                </div>
+                <div class="team-member" data-aos="fade-down">
+                    <div class="image-placeholder">
+                        <a href="contact-us.html"><i class="fa fa-plus apply-job" aria-hidden="true"></i></a>
+                        <br>
+                        <h3>Apply for a job</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-story mt-5">
+        <h1 class="my-2 pt-3 "  data-aos="fade-right" >Our Story</h1>
+        <hr>
+        <div class="stories">
+            <div class="card" data-aos="fade-in" >
+                <div class="card-body">
+                    <!-- <h4><u><b>Mission</b></u></h4> -->
+                    <h3 class="text-white pt-3" data-aos="fade-up" data-aos-delay="500">
+                     01   Fostering a Culture of Innovation
+                    </h3>
+                    <p class="pt-3" id="a-img1" data-aos="fade-up" data-aos-delay="1000">
+                        We strive to transform the relationship between our team and our customers through
+                         transparency and collaboration, ensuring high quality, innovation, and efficiency
+                        
+                        </p>
+                        <p class="pt-2" data-aos="fade-up" data-aos-delay="1500">
+                            Our goal is to ensure every project we undertake is a testament to our commitment to excellence
+                        </p>
+                </div>
+                <div class="story-img">
+                    <img id="img1" src="img/story1.webp" alt="service-1" class="float-end"  style="display: none">
+                </div>
+            </div>
+            <div class="card" data-aos="fade-in">
+                <div class="card-body">
+                    <!-- <h4><u><b>Vision</b></u></h4> -->
+                    <h3 class="text-white pt-3" data-aos="fade-up" data-aos-delay="500">
+                      02  Passionate Minds, Creative Solutions
+                    </h3>
+                    <p class="pt-3" id="a-img2" data-aos="fade-up" data-aos-delay="1000">
+                        We aim to integrate clients into our creative process,
+                         building websites that are not just designed for them, but with them, 
+                         ensuring a perfect blend of ideas and expertise
+                    </p>
+                    <p class="pt-2" data-aos="fade-up" data-aos-delay="1500">
+                        We help your team increase their skills with simple tools and processes. We are only there where we add value
+                    </p>
+                </div>
+                <div class="story-img">
+                        <img id="img2" src="img/story2.webp" alt="service-1" class="float-end"  style="display: none">
+                    </div>
+            </div>
+            <div class="card" data-aos="fade-down">
+                <div class="card-body">
+                    <!-- <h4><u><b>Values</b></u></h4> -->
+                    <h3 class="text-white pt-3">
+                      03  Teamwork and collaboration are at the heart &nbsp; &nbsp; &nbsp;of our success
+                    </h3>
+                    <p class="pt-3"  id="a-img3">
+                        We believe in giving back and making a positive impact on our community 
+                        and look for collaboration and community team spirit.
+                    </p>
+                    <p class="pt-2">
+                        Organize skills and create qualitative and effective solutions
+                    </p>
+                </div>
+                <div class="story-img">
+                    <img id="img3" src="img/story3.webp" alt="service-1" class="float-end"  style="display: none">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="row container-fluid">
+        <div class="col-6">
+            <p class="last-p">We Would Love <br>To Work With You.</p>
+        </div>
+        <div class="col-6">
+        <div class="bottom">
+           <img src="img/circle-logo.webp" width="300px" height="300px" alt="Example Image" />
+        </div>
+       </div>
+     </div>
+</main>
+<footer class="footer text-white pt-3">
+    <div class="container-fluid">
+        <div class="row first-footer">
+            <div class="col-md-2">
+                <img id="footer-logo" src="img/footer-logo.svg" alt="footer-logo"  >
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="about-us.html" class="text-white">AboutUs</a></li>
+                    <li><a href="services.html" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Blogs</a></li>
+                    <li><a href="profile.html" class="text-white">Projects</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Address</h5>
+                <p class="pt-3">Rue Ry de Brabant 58<br>7170 Bellecourt BE</p>
+                <p class="pt-3">+32 478 40 22 91<br>info@i-web.be</p>
+            </div>
+            <div class="col-md-6 form-col">
+                <h5>Contact Us</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone">
+                    </div>
+                    <div class="form-group pt-2">
+                        <button type="submit" class="btn btn-outline-light pl-5">Send</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4 pt-3 copy">
+            <div class="col-12">
+                <p>© i-Web - digital agency 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e1c1fbeb79.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/shader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+<script>
+    $(document).ready(function (){
+        $('#a-img1').on({
+            mouseover: function () {
+                $('#img1').fadeIn('slow');
+            },
+            mouseout: function () {
+                $('#img1').fadeOut('slow');
+            }
+        });
+        $('#a-img2').on({
+            mouseover: function () {
+                $('#img2').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img2').fadeOut('slow');
+            }
+        });
+        $('#a-img3').on({
+            mouseover: function () {
+                $('#img3').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img3').fadeOut('slow');
+            }
+        });
+    });
+</script>
+<script>
+    const images = document.querySelectorAll('.pulse-img');
+    
+    window.addEventListener('scroll', () => {
+      images.forEach((img) => {
+        // إضافة فئة النبض
+        img.classList.add('pulse');
+        
+        // إزالة فئة النبض بعد انتهاء التأثير
+        img.addEventListener('animationend', () => {
+          img.classList.remove('pulse');
+        });
+      });
+    });
+            </script>
+</body>
+
+
+</html>

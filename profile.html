@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I_web</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inner-style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="preloader">
+    <img class="logo" src="img/logo.svg" alt="logo" >
+</div>
+<canvas id="backgroundCanvas"></canvas>
+<div id="magnifier"></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- <div class="icon-bar">
+    <a  href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+</div> -->
+<header>
+     <div class="container-fluid">
+       
+         <div class="row">
+             <div class="col-6">
+                 <img  class="logo"  src="img/logo.svg" alt="logo" >
+             </div>
+        </div>
+         <div class="row">
+             <div class="card text-white  pt-5">
+                 <div class="card-body">
+                     <h5 class="card-title" data-aos="slide-right" data-aos-duration="2000">WORK.</h5>
+                     <hr class="mt-2">
+                     <p class="card-text pt-2" data-aos="slide-left" data-aos-duration="2000">
+                        Achieving high-quality projects in record time
+                     </p>
+                 </div>
+             </div>
+         </div>
+     </div>
+</header>
+<main>
+    <!-- زر التوغل والقائمة -->
+    <div class="toggle-container">
+        <button id='main-button' class="toggle-button" onclick="toggleMenu()">
+            <i id='fa1' class="fa-solid fa-bars-staggered"></i>
+            <i id='fa2' class="fa-solid fa-close"></i>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a  href="about-us.html">AboutUs</a>
+            <a  href="services.html">Services</a>
+            <a  href="#">Blogs</a>
+            <a  href="profile.html" class="active">Projects</a>
+            <a href="contact-us.html">ContactUs</a>
+        </div>
+    </div>
+    <section class="profile">
+        <div id="after"></div>
+        <div class="container" >
+            <!-- <div class="toggle-project-container" data-aos="slide-down">
+                <button class="toggle-project-button" onclick="toggleProjectMenu()">All</button>
+                <div class="project-menu" id="project-menu">
+                    <a href="#" data-file="content1.html">Web Designer</a>
+                    <a href="#" data-file="content2.html">Primary category</a>
+                    <a href="#" data-file="content3.html">Mobile app development</a>
+                    <a href="#" data-file="content4.html">Additional category</a>
+                    <a href="#" data-file="content52.html">Internet marketing service</a>
+                    <a href="#" data-file="content52.html">Odoo journey</a>
+                    <a href="#" data-file="content52.html">Digital strategy</a>
+                </div>
+            </div> -->
+            <div id="content">
+            <div class="project-grid">
+                <div class="project-member" data-aos="fade-down">
+                    <a href="xpert.html">
+                        <div class="image-placeholder">
+                            <img  class="project-image" src="img/lexpert.png" alt="Card image cap">
+                        </div>
+                        <h3>Lexpert</h3>
+                        <p>web Design</p>
+                    </a>
+                </div> 
+                <div class="project-member" data-aos="fade-down">
+                    <a href="easyCoffee.html">
+                        <div class="image-placeholder">
+                            <img  class="project-image" src="img/easyCoffee.png" alt="Card image cap">
+                        </div>
+                        <h3>Easy Coffee</h3>
+                        <p>Odoo ERB</p>
+                    </a>
+                </div> 
+                <div class="project-member" data-aos="fade-down">
+                    <a href="confluence.html">
+                        <div class="image-placeholder">
+                            <img  class="project-image" src="img/lexpert.png" alt="Card image cap">
+                        </div>
+                        <h3>Confluence</h3>
+                        <p>web Design</p>
+                    </a>
+                </div> 
+                <div class="project-member" data-aos="fade-down">
+                    <a href="fanatyxh.html">
+                        <div class="image-placeholder">
+                            <img  class="project-image" src="img/fanatyxh.png" alt="Card image cap">
+                        </div>
+                        <h3>Fanatyxh</h3>
+                        <p>web Design</p>
+                    </a>
+                </div> 
+                <div class="project-member" data-aos="fade-down">
+                    <a href="apaq.html">
+                        <div class="image-placeholder">
+                            
+                            <img  class="project-image" src="img/apaq.png" alt="Card image cap">
+                        </div>
+                        <h3>A-paq</h3>
+                        <p>web Design</p>
+                    </a>
+                </div> 
+                <div class="project-member" data-aos="fade-down">
+                    <a href="cabinet.html">
+                        <div class="image-placeholder">
+                            <img  class="project-image" src="img/cabinet.png" alt="Card image cap">
+                        </div>
+                        <h3>Cabinet</h3>
+                        <p>web Design</p>
+                    </a>
+                </div> 
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="row container-fluid container-bottom">
+        <div class="col-6">
+            <p class="last-p">We Would Love <br>To Work With You.</p>
+        </div>
+        <div class="col-6">
+        <div class="bottom">
+           <img src="img/circle-logo.webp" width="300px" height="300px" alt="Example Image" />
+        </div>
+       </div>
+     </div>
+</main>
+<footer class="footer text-white pt-3">
+    <div class="container-fluid">
+        <div class="row first-footer">
+            <div class="col-md-2">
+                <img id="footer-logo" src="img/footer-logo.svg" alt="footer-logo"  >
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="about-us.html" class="text-white">AboutUs</a></li>
+                    <li><a href="services.html" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Blogs</a></li>
+                    <li><a href="profile.html" class="text-white">Projects</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Address</h5>
+                <p class="pt-3">Rue Ry de Brabant 58<br>7170 Bellecourt BE</p>
+                <p class="pt-3">+32 478 40 22 91<br>info@i-web.be</p>
+            </div>
+            <div class="col-md-6 form-col">
+                <h5>Contact Us</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone">
+                    </div>
+                    <div class="form-group pt-2">
+                        <button type="submit" class="btn btn-outline-light pl-5">Send</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4 pt-3 copy">
+            <div class="col-12">
+                <p>© i-Web - digital agency 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e1c1fbeb79.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/shader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        // تحديث المحتوى عند النقر على الروابط
+        $('#project-menu a').click(function(e) {
+            e.preventDefault(); // منع التصفح الافتراضي
+
+            var filePath = $(this).data('file'); // الحصول على اسم الملف من الخاصية data-file
+            $('#content').load(filePath); // تحميل محتوى الملف في القسم
+        });
+    });
+</script>
+<script>
+    $(document).ready(function (){
+        $('#a-img1').on({
+            mouseover: function () {
+                $('#img1').fadeIn('slow');
+            },
+            mouseout: function () {
+                $('#img1').fadeOut('slow');
+            }
+        });
+        $('#a-img2').on({
+            mouseover: function () {
+                $('#img2').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img2').fadeOut('slow');
+            }
+        });
+        $('#a-img3').on({
+            mouseover: function () {
+                $('#img3').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img3').fadeOut('slow');
+            }
+        });
+    });
+</script>
+<script>
+    function toggleProjectMenu() {
+        let menu = document.getElementById("project-menu");
+        let content = document.getElementById("content");
+        let overlay=document.getElementById("after");
+        if (menu.classList.contains("project-open")) {
+            menu.classList.remove("project-open");
+            content.classList.remove("project-hidden");
+            setTimeout(function() {
+                menu.style.display = "none";
+                overlay.style.display="none";
+            }, 0); // نفس مدة الانتقال في CSS
+        } else {
+            menu.style.display = "block";
+            overlay.style.display="block";
+            setTimeout(function() {
+                menu.classList.add("project-open");
+                content.classList.add("project-hidden");
+              
+            }, 0); // بدون تأخير، لتمكين الانتقال
+        }
+    }
+
+    // إغلاق القائمة عند النقر في أي مكان خارجها
+    document.addEventListener('click', function(event) {
+        let menu = document.getElementById("project-menu");
+        let button = document.querySelector('.toggle-button');
+        let content = document.getElementById("content");
+        let overlay=document.getElementById("after");
+        if (!button.contains(event.target) && !menu.contains(event.target)) {
+            if (menu.classList.contains("project-open")) {
+                menu.classList.remove("project-open");
+                content.classList.remove("project-hidden")
+                setTimeout(function() {
+                    menu.style.display = "none";
+                    overlay.style.display="none";
+                }, 0); // نفس مدة الانتقال في CSS
+            }
+        }
+    });
+    document.querySelectorAll('#project-menu a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            let menu = document.getElementById("project-menu");
+            let content = document.getElementById("content");
+            menu.classList.remove("project-open");
+            content.classList.remove("project-hidden");
+            let overlay=document.getElementById("after");
+            setTimeout(function() {
+                menu.style.display = "none";
+                overlay.style.display="none";
+            }, 0); // بدون تأخير، لتمكين الانتقال
+        });
+    });
+</script>
+
+</body>
+
+
+</html>

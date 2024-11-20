@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I_web</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inner-style.css">
+    <link rel="stylesheet" href="css/fanatyxh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="preloader">
+    <img class="logo" src="img/logo.svg" alt="logo">
+</div>
+<canvas id="backgroundCanvas"></canvas>
+<div id="magnifier"></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- <div class="icon-bar">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+</div> -->
+<header>  
+    <div class="container-fluid apac">
+        <div class="row">
+            <div class="col-6">
+                <img class="logo" src="img/logo.svg" alt="logo">
+            </div>
+        </div>
+        <div class="row back-link">
+            <a href="profile.html">Back to work</a>
+        </div>
+        <div class="row">
+            <div class="col-4 owner-info"  data-aos='zoom-in'>
+                <h5>Client</h5>
+                <p>Christophe and Lucas</p>
+                <h5 class="pt-5">Deliverables</h5>
+                <p>Visual Identity
+                    <br>Landing page
+                    </p>
+                <p class="date">Date:14/8/2024</p>
+            </div>
+            <div class="col-8 inner-project">
+                <div class="image-container"  data-aos='zoom-in'>
+                    <div id="header-overlay"></div>
+                    <img src="img/fanatyxh/base-photo.jpeg" alt="hh">
+                </div>
+                <div class="Project-title"  data-aos='zoom-in'>
+                    <h1>FANATYXH</h1>
+                    <p>A dedicated team from Belgium committed to achieving global reach.<p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="toggle-container">
+        <button id='main-button' class="toggle-button" onclick="toggleMenu()">
+            <i id='fa1' class="fa-solid fa-bars-staggered"></i>
+            <i id='fa2' class="fa-solid fa-close"></i>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a  href="about-us.html">AboutUs</a>
+            <a  href="services.html">Services</a>
+            <a  href="#">Blogs</a>
+            <a  href="profile.html" >Projects</a>
+            <a href="contact-us.html">ContactUs</a>
+        </div>
+    </div>
+    <section class="inner-project-details">
+        <div class="details">
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Context</u>
+                    </h2>
+                    <p class="pt-3">
+                        Christophe and Lucas envisioned a unique visual identity that would capture the essence of their 
+                        idea and resonate with a global audience. 
+                        They aimed to craft a brand that not only stands out but also connects deeply 
+                        with fans, spreading their passion far and wide.
+
+                    </p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Solution</u>
+                    </h2>
+                    <p class="pt-3">
+                        By crafting a tailored strategy, delving deep into every facet of the concept, 
+                        and collaborating as a cohesive team,
+                         we can forge a visual identity that resonates with their vision and passion,
+                          and amplify it to reach a wide audience
+                    </p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Result</u>
+                    </h2>
+                    <p class="pt-3">
+                        Through a dynamic business strategy, captivating visual identity, 
+                        and an engaging website, the FANATYXH team will solidify its standing 
+                        as pioneers in innovation, aesthetics, and impactful projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inner-project-img">
+        <div class="card img-card-1"  data-aos='fade-down'>
+            <div id="photo1-overlay"></div>
+            <h1>Reconnect
+                <br>
+                your 
+                <br>
+                club
+                <br>
+                to you</h1>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 mb-3 mb-sm-0">
+                <div class="card follow-fana" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>The relationship between FANATYXH and followers</h1>
+                        <p class="pt-5">FANATYXH is an innovative platform designed to strengthen the bond between sports 
+                            teams and their fans. </p>
+                        <p class="pt-2">It offers real-time match analysis, exclusive content, and personalized experiences.
+                             By integrating social media and augmented reality, it aims to amplify fan excitement on match 
+                             days and maintain engagement year-round</p>
+                        <p class="pt-2">Fans can share game screenshots, 
+                            vote on match outcomes, stay updated on events, and discuss challenges,
+                             creating a vibrant community.
+                        </p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card img-card-2" data-aos='fade-down'>
+            <h1 id="title-fanatyxh" data-aos='fade-down'>FANATYXH</h1>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                <img id="logo-fanatyxh" src="img/fanatyxh/logo.svg" width="200px" height="200px" data-aos="zoom-in-down">
+            </div>
+            <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                <div class="card strategy" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>STRATEGY</h1>
+                        <p class="pt-5">The team envisioned a unique logo, 
+                            drawing inspiration from the circular gear of Tyche,
+                             the Greek goddess of luck, and incorporating elements that suggest speed.
+                             After exploring numerous designs and iterations, 
+                             we finally crafted a logo that perfectly encapsulates their vision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  projects">
+            <div class="col-12">
+                <div class="card project-slides1">
+                    
+                </div>
+                <div class="card project-slides">
+                    <img class="card-img slide2" src="img/fanatyxh/slide1.jpg" >                              
+                </div>
+                <div class="card project-slides">
+                    <img class="card-img slide2" src="img/fanatyxh/slide2.jpg" >                              
+                </div>
+                <div class="card project-slides">
+                    <img class="card-img slide2" src="img/fanatyxh/slide3.jpg" >                              
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                <div class="card strategy" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>Development & website</h1>
+                        <p class="pt-5">We began by crafting a bespoke wireframe, meticulously outlining the sections
+                             and overall layout of the site.</p>
+                             <p class="pt-2">With a foundation in user experience principles,
+                                we infused the design with artistic flair, selecting vibrant colors that echo the project’s dynamic,
+                                 sports-centric theme.</p> 
+                                 <p class="pt-2">    
+                             The typography was chosen to complement this energetic vibe, 
+                             and we incorporated elements that elevate and enhance the core concept.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row  projects">
+            <div class="col-12">
+                <div class="card project-slides project-grid">
+                    <img class="card-img" src="img/fanatyxh/slide1a.jpg" alt="Card image">
+                    <img class="card-img" src="img/fanatyxh/slide1b.jpg" alt="Card image">
+                    <img class="card-img" src="img/fanatyxh/slide1c.jpg" alt="Card image">
+                </div> 
+                <div class="card project-slides project-grid">
+                    <img class="card-img" src="img/fanatyxh/slide2a.jpg" alt="Card image">
+                    <img class="card-img" src="img/fanatyxh/slide2b.jpeg" alt="Card image">
+                    <img class="card-img" src="img/fanatyxh/slide2c.jpg" alt="Card image">
+                </div> 
+            </div>
+        </div>  -->
+        <div class="row frames">
+            <div class="col-4 frame" data-aos="fade-down">
+                <img class="card-img" src="img/fanatyxh/slide1a.jpg" alt="Card image">
+            </div>
+            <div class="col-4 frame"  data-aos="fade-down" data-aos-delay="200">
+                <img class="card-img" src="img/fanatyxh/slide1b.jpg" alt="Card image">
+            </div>
+            <div class="col-4 frame"  data-aos="fade-down" data-aos-delay="400">
+                <img class="card-img" src="img/fanatyxh/slide1c.jpg" alt="Card image">
+            </div>
+        </div>
+        <div class="row back-link pt-5">
+            <a href="profile.html">Next project</a>
+        </div>
+        <div class="card next-project" data-aos='fade-down'>
+            <div class="title" data-aos='zoom-in'>
+                <h1>EASY COFFEE</h1>
+                <p>A company that specializes in renting coffee machines via e-commerce.<p>
+            </div>
+        </div>
+        <div class="row back-link">
+            <a href="profile.html">Back to work</a>
+        </div>
+    </section>
+    <div class="row container-fluid">
+        <div class="col-6">
+           <p class="last-p">We Would Love <br>To Work With You.</p>
+        </div>
+        <div class="col-6">
+        <div class="bottom">
+           <img src="img/circle-logo.webp" width="300px" height="300px" alt="Example Image" />
+        </div>
+       </div>
+     </div>
+</main>
+<footer class="footer text-white pt-3">
+    <div class="container-fluid">
+        <div class="row first-footer">
+            <div class="col-md-2">
+                <img id="footer-logo" src="img/footer-logo.svg" alt="footer-logo"  >
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="about-us.html" class="text-white">AboutUs</a></li>
+                    <li><a href="services.html" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Blogs</a></li>
+                    <li><a href="profile.html" class="text-white">Projects</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Address</h5>
+                <p class="pt-3">Rue Ry de Brabant 58<br>7170 Bellecourt BE</p>
+                <p class="pt-3">+32 478 40 22 91<br>info@i-web.be</p>
+            </div>
+            <div class="col-md-6 form-col">
+                <h5>Contact Us</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone">
+                    </div>
+                    <div class="form-group pt-2">
+                        <button type="submit" class="btn btn-outline-light pl-5">Send</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4 pt-3 copy">
+            <div class="col-12">
+                <p>© i-Web - digital agency 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e1c1fbeb79.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/shader-fanatyxh.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#a-img1').on({
+            mouseover: function () {
+                $('#img1').fadeIn('slow');
+            },
+            mouseout: function () {
+                $('#img1').fadeOut('slow');
+            }
+        });
+        $('#a-img2').on({
+            mouseover: function () {
+                $('#img2').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img2').fadeOut('slow');
+            }
+        });
+        $('#a-img3').on({
+            mouseover: function () {
+                $('#img3').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img3').fadeOut('slow');
+            }
+        });
+    });
+</script>
+<script>
+    const headerOverlay = document.querySelector('#header-overlay');
+    const imageContainer = document.querySelector('.inner-project');
+    
+    imageContainer.addEventListener('mousemove', (e) => {
+        const rect = imageContainer.getBoundingClientRect();
+        let x = e.clientX - rect.left;
+        let y = e.clientY - rect.top;
+    
+        // نصف قطر الدائرة
+        const radius = 150;
+    
+        // تحديد الحد الأدنى والأقصى للإحداثيات لمنع تجاوز الحدود
+        const maxX = rect.width - radius; // أقصى إحداثي X
+        const maxY = rect.height - radius; // أقصى إحداثي Y
+        const minX = radius; // أدنى إحداثي X
+        const minY = radius; // أدنى إحداثي Y
+    
+        // منع تجاوز الدائرة للحدود
+        // if (x < minX) x = minX;
+        // if (x > maxX) x = maxX;
+        // if (y < minY) y = minY;
+        // if (y > maxY) y = maxY;
+    
+        // تحديث موقع التدرج الدائري لإزالة الشفافية حول المؤشر
+        headerOverlay.style.maskImage = `radial-gradient(circle at ${x}px ${y}px, transparent ${radius}px, black ${radius + 1}px)`;
+    });
+    
+    imageContainer.addEventListener('mouseleave', () => {
+        // إعادة الشفافية كما كانت عند خروج الماوس
+        headerOverlay.style.maskImage = 'none';
+    });
+    
+    </script>
+</body>
+
+
+</html>

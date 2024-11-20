@@ -1,0 +1,357 @@
+
+/*profile.css page css*/
+.profile {
+    background: rgba(255, 255, 255, 0.3);
+    padding-bottom: 100px;
+}
+/* نمط القائمة */
+/* نمط الزر */
+
+.profile .container{
+    /* max-width: 1000px; */
+    padding-top: 150px;
+}
+.toggle-project-container {
+    position: relative;
+    top: 50px;
+    left:-250px;
+    z-index: 1000;
+}
+
+.toggle-project-button {
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 64px;
+    position: relative; /* تحتاج لتحديد الموضع لتطبيق z-index */
+    z-index: 1001; /* أعلى من القائمة */
+}
+.toggle-project-button::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-project-button:hover {
+
+    color: #ffeb3b;
+}
+.project-menu {
+    display: none;
+    position: absolute;
+    background-color: inherit;
+    border-left: 1px #fff solid;
+    overflow: hidden;
+    z-index: 1000; /* خلف الزر */
+    max-height: 0;
+    white-space: nowrap; /* لمنع العناصر من الانقسام لأسطر جديدة */
+    transition: max-height 0.5s ease-out; /* زيادة مدة الانتقال */
+}
+.project-menu.project-open{
+    display: block;
+    max-height: 700px;
+   
+}
+.project-menu a {
+    display: block;
+    padding: 30px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: none;
+    text-align: left;
+    position: relative; /* لإضافة المثلث */
+}
+
+.project-menu a:hover {
+    color: #ffeb3b;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    align-items: start;
+    position: relative;
+}
+
+.project-member {
+    border: none;
+    border-radius: 32px;
+    width: 30rem;
+    height: 30rem;
+    background:rgba(0, 0, 0, 0.4);
+}
+
+.project-member .card-img-top {
+    border-radius: 32px;
+    height: inherit;
+}
+
+.project-member p {
+    color: rgb(180, 178, 178);
+    font-weight: bold;
+    margin-left: 60px;
+}
+.project-member h3{
+    margin-left: 60px;
+    padding-top: 5px;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.project-member .image-placeholder {
+    width: 32rem;
+    height: 30rem;
+    /* background:rgba(0, 0, 0, 0.4); */
+    border-radius: 32px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding-right: 30px;
+}
+.project-grid .project-member{
+    margin-top: 30px;
+}
+.project-image {
+    object-fit: cover;
+    transition: opacity 1.5s ease-in-out;
+}
+  
+.project-grid .project-member:hover .project-image {
+    opacity: 0; 
+}
+  
+.project-grid .project-member{
+    position: relative;
+}
+  
+.project-grid .project-member:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/lxpert/header.webp);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; 
+    z-index: 1; 
+    border-radius: 32px;
+  }
+.project-grid .project-member:nth-child(1):hover::after {
+    opacity: 1; 
+}
+
+.project-grid .project-member:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/easyCoffee/base-photo.webp);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; 
+    z-index: 1; 
+    border-radius: 32px;
+  }
+.project-grid .project-member:nth-child(2):hover::after {
+    opacity: 1; 
+}
+
+.project-grid .project-member:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/confluence/base.webp);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; 
+    z-index: 1; 
+    border-radius: 32px;
+  }
+.project-grid .project-member:nth-child(3):hover::after {
+    opacity: 1; 
+}
+
+.project-grid .project-member:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/fanatyxh/base-photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; 
+    z-index: 1; 
+    border-radius: 32px;
+  }
+.project-grid .project-member:nth-child(4):hover::after {
+    opacity: 1; 
+}
+
+.project-grid .project-member:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/apaq/sky.webp);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; 
+    z-index: 1; 
+    border-radius: 32px;
+  }
+.project-grid .project-member:nth-child(5):hover::after {
+    opacity: 1; 
+}
+
+.project-grid .project-member:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/cabinet/photo1.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; 
+    z-index: 1; 
+    border-radius: 32px;
+  }
+.project-grid .project-member:nth-child(6):hover::after {
+    opacity: 1; 
+}
+/* إضافة الانزياح للعمود الثاني بأكمله */
+.project-grid > :nth-child(2n) {
+    position: relative;
+    top: -100px;  /* Adjust this value to match the desired offset */
+}
+.project-hidden{
+    opacity: 0.3;
+}
+
+.project-grid-cate {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    align-items: start;
+    position: relative;
+    margin-left: 100px;
+}
+
+.project-member-cate {
+    border: none;
+    border-radius: 32px;
+    width: 30rem;
+    height: 30rem;
+}
+
+.project-member-cate .card-img-top {
+    border-radius: 32px;
+    height: inherit;
+}
+
+.project-member-cate p {
+    color: #000000;
+    font-weight: bold;
+    margin-left: 60px;
+}
+.project-member-cate h4{
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+.project-member-cate .image-placeholder {
+    width: 25rem;
+    height: 22rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 32px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+.profile #after {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+    /* margin-left: 80px; */
+    padding-left: 20px;
+    padding-top: 200px;
+    /* border-radius: 64px; */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .container-bottom{
+    background: rgba(255, 255, 255, 0.3);
+    margin-left: 0px;
+  }
+  .bottom{
+    padding-left: 350px;
+    padding-bottom: 100px;
+  }
+  .bottom img {
+      height: 50%;
+      animation: rotate 7s infinite linear;
+  }
+  /* .last-p{
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 50px;
+  } */
+  #last-logo{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: calc(100% - 80px);
+    /* top: 10px; */
+    margin-top: 40px;
+  }

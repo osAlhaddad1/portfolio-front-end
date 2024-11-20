@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I_web</title>
+    <link href="https://api.fontshare.com/css?f[]=oswald@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inner-style.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+<div class="preloader">
+    <img class="logo" src="img/logo.svg" alt="logo" >
+</div>
+<canvas id="backgroundCanvas"></canvas>
+<div id="magnifier" ></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- <div class="icon-bar">
+    <a  href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+</div> -->
+<main  data-scroll-container id="js-scroll">
+    <header data-scroll-section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <img  class="logo"  src="img/logo.svg" alt="logo" >
+                </div>
+           </div>
+            <div class="row">
+                <div class="card text-white  pt-5">
+                    <div class="card-body">
+                        <h5 class="card-title" data-aos="slide-right" data-aos-duration="2000">SERVICES.</h5>
+                        <hr class="mt-2">
+                        <p class="card-text pt-2" data-aos="slide-left" data-aos-duration="2000">
+                           From concept to launch, we craft visually stunning and user-centric websites that drive engagement and growth.” 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </header>
+    <div class="toggle-container">
+        <button id='main-button' class="toggle-button" onclick="toggleMenu()">
+            <i id='fa1' class="fa-solid fa-bars-staggered"></i>
+            <i id='fa2' class="fa-solid fa-close"></i>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a  href="about-us.html">AboutUs</a>
+            <a  href="services.html" class="active">Services</a>
+            <a  href="#">Blogs</a>
+            <a  href="profile.html" >Projects</a>
+            <a href="contact-us.html">ContactUs</a>
+        </div>
+    </div>
+            <section class="section-0" data-scroll-section>
+                <h2 data-scroll data-scroll-speed="-2">01 Web/App Development</h2>
+                <div class="section-0__img-wrapper" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal" >
+                    <img src="img/story1.webp" alt="" data-scroll data-scroll-speed="0.75" data-scroll-direction="horizontal">
+                </div>
+            </section>
+            <section class="section-1" data-scroll-section>
+                <div class="section-1__text section-1__text--top" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" data-scroll-delay="0.5">
+                    <span data-scroll data-scroll-speed="2">  
+                        <h3>Crafting Digital Experiences Together</h3>
+                        <p class="pt-2">
+                            We excel in developing stunning websites and intuitive mobile 
+                            apps that captivate and engage users. 
+                        </p>
+                        <ul type="disk">
+                            <li>
+                                <p>
+                                    Project Discovery and Planning: Understanding client needs, 
+                                    defining goals, and creating a project roadmap. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    UI UX Design: Crafting userfriendly and visually appealing 
+                                    interfaces. 
+                                </p>
+                            </li>
+                            <li>
+                                <p> Front-End Development: Building the user_facing part of 
+                                    the website or app. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>  Back-End Development: Developing server_side logic, 
+                                    databases, and integrations. 
+                                </p>
+                            </li>
+                            <li>
+                                <p> Mobile App Development: Creating native or cross_platform 
+                                    mobile applications. 
+                                </p>
+                            </li>
+                        </ul>
+                    </span>
+                    <span data-scroll data-scroll-speed="2">
+                        <ul type="disk" class="main-p">
+                            <li>
+                                <p>
+                                    Content Management Systems (CMS): Implementing systems 
+                                    like WordPress for easy content updates.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    API Development and Integration: Connecting different software
+                                    and systems for seamless data flow.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Quality Assurance and Testing: Ensuring the product is bug-free 
+                                    and performs well.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Deployment and Hosting: Launching the website or app and 
+                                    providing reliable hosting solutions.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Maintenance and Support: Ongoing updates, security patches, 
+                                    and technical supports.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    ECommerce Development: Setting up online stores with secure 
+                                    payment gateways.
+                                </p>
+                            </li>
+                       </ul>
+                   </span>
+                </div>
+            </section>
+            <section class="section-0" data-scroll-section >
+                <h2 data-scroll data-scroll-speed="0">02  Digital Marketing </h2>
+                <div class="section-0__img-wrapper" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal" data-scroll-call="bg2">
+                    <img src="img/story3.webp" alt="" data-scroll data-scroll-speed="0.75" data-scroll-direction="horizontal">
+                </div>
+            </section>
+            <section class="section-1" data-scroll-section>
+                <div class="section-1__text section-1__text--top" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" data-scroll-delay="0.5">
+                    <span data-scroll data-scroll-speed="2">  
+                        <h3>Boost online visibility and engagement <br> with i_web Digital Agency's services.</h3>
+                        <ul type="disk" class="pt-2">
+                            <li>
+                                <p>
+                                    SEO (Search Engine Optimization): Enhancing website visibility
+                                    on search engines to attract organic traffic. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Content Marketing: Creating and distributing valuable content
+                                    to attract and engage the target audience. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Social Media Marketing: Managing and growing a brand's presence 
+                                    on social media platforms. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Email Marketing: Developing targeted email campaigns to nurture 
+                                    leads and retain customers. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    PPC (Pay-PerClick)
+                                     Advertising: Running paid ads to drive traffic and conversions. 
+                                </p>
+                            </li>
+                        </ul>
+                    </span>
+                    <span data-scroll data-scroll-speed="2">
+                        <ul type="disk" class="main-p2">
+                            <li>
+                                <p>
+                                    Affiliate Marketing: Partnering with affiliates to promote products 
+                                    and services. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Influencer Marketing: Collaborating with influencers to reach 
+                                    a broader audience. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Analytics and Reporting: Analyzing campaign performance and 
+                                    providing actionable insights. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Conversion Rate Optimization (CRO): Enhancing user experience 
+                                    to improve conversion rates. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Reputation Management: Monitoring and managing the 
+                                    brand's online presence and reviews. 
+                                </p>
+                            </li>
+                       </ul>
+                   </span>
+                </div>
+            </section>
+            <section class="section-0" data-scroll-section>
+                <h2 data-scroll data-scroll-speed="0">03 Digital Entrepreneurship</h2>
+                <div class="section-0__img-wrapper" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal" data-scroll-call="bg1">
+                    <img src="img/story3.webp" alt="" data-scroll data-scroll-speed="0.75" data-scroll-direction="horizontal">
+                </div>
+            </section>
+            <section class="section-1" data-scroll-section>
+                <div class="section-1__text section-1__text--top" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" data-scroll-delay="0.5">
+                    <span data-scroll data-scroll-speed="2">  
+                        <h3>Empower Your Online Business Journey</h3>
+                        <ul type="disk" class="pt-2 left-ul">
+                            <li>
+                                <p>
+                                     Business Model Innovation: Developing and refining 
+                                    innovative business models tailored to digital environments. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Market Research and Analysis: Conducting thorough market
+                                    research to identify opportunities and trends. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Brand Development: Creating and nurturing a strong digital 
+                                    brand presence. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Product Development: Ideating, designing, and launching 
+                                    digital products or services. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Funding and Investment: Assisting in securing funding and 
+                                    investment for digital ventures. 
+                                </p>
+                            </li>
+                        </ul>
+                    </span>
+                    <span data-scroll data-scroll-speed="2">
+                        <ul type="disk" class="main-p">
+                            <li>
+                                <p>
+                                    Growth Hacking: Implementing creative strategies to achieve 
+                                    rapid growth and scalability. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Digital Marketing Strategy: Crafting comprehensive marketing
+                                    strategies to promote digital products. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Technology Integration: Integrating cutting-edge technologies
+                                    to support business operations. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Ecommerce Solutions: Setting up and optimizing online stores
+                                    and sales channels. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Legal and Compliance: Ensuring all digital business activities 
+                                    comply with relevant laws and regulations. 
+                                </p>
+                            </li>
+                       </ul>
+                   </span>
+                </div>
+            </section>
+            <section class="section-0" data-scroll-section>
+                <h2 data-scroll data-scroll-speed="0">04 Odoo</h2>
+                <div class="section-0__img-wrapper" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal" data-scroll-call="bg2">
+                    <img src="img/story3.webp" alt="" data-scroll data-scroll-speed="0.75" data-scroll-direction="horizontal">
+                </div>
+            </section>
+            <section class="section-1" data-scroll-section>
+                <div class="section-1__text section-1__text--top" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" data-scroll-delay="0.5">
+                    <span data-scroll data-scroll-speed="2">  
+                        <h3>Implementing a user-friendly Odoo system <br>tailored to operational needs.</h3>
+                        <ul type="disk">
+                            <li>
+                                <p>
+                                     Ensuring smooth operation through testing and documentation. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Providing training for effective tool use. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Integrating with other software via APIs. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Offering secure hosting with regular updates. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Developing and enhancing online stores using 
+                                    Odoo's e-commerce tools. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Implementing SEO and automated marketing strategies. 
+                                </p>
+                            </li>
+                        </ul>
+                        <a href="odoo.html">Explore more about Odoo</a>
+                    </span>
+                    <!-- <span data-scroll data-scroll-speed="2">
+                        <ul type="disk">
+                            <li>
+                                <p>
+                                Our team of experts provides tailored solutions that cover every aspect of digital entrepreneurship,
+                                ensuring your venture thrives in the competitive online landscape. 
+                                </p>
+                            </li>
+                       </ul>
+                   </span> -->
+                </div>
+            </section>
+        </div>
+    <div class="row container-fluid container-bottom" data-scroll-section>
+        <div class="col-6">
+            <p class="last-p">We Would Love <br>To Work With You.</p>
+        </div>
+        <div class="col-6">
+        <div class="bottom">
+           <img src="img/circle-logo.webp" width="300px" height="300px" alt="Example Image" />
+        </div>
+       </div>
+    </div>
+       <footer class="footer text-white pt-3" data-scroll-section>
+        <div class="container-fluid">
+            <div class="row first-footer">
+                <div class="col-md-2">
+                    <img id="footer-logo" src="img/footer-logo.svg" alt="footer-logo"  >
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about-us.html" class="text-white">AboutUs</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Blogs</a></li>
+                        <li><a href="profile.html" class="text-white">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Address</h5>
+                    <p class="pt-3">Rue Ry de Brabant 58<br>7170 Bellecourt BE</p>
+                    <p class="pt-3">+32 478 40 22 91<br>info@i-web.be</p>
+                </div>
+                <div class="col-md-6 form-col">
+                    <h5>Contact Us</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="phone" class="form-control" id="phone" placeholder="Enter Phone">
+                        </div>
+                        <div class="form-group pt-2">
+                            <button type="submit" class="btn btn-outline-light pl-5">Send</button>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4 pt-3 copy">
+                <div class="col-12">
+                    <p>© i-Web - digital agency 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e1c1fbeb79.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/shader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+<script>
+  const scrollContainer = document.querySelector("main");
+
+const scroll = new LocomotiveScroll({
+	el: scrollContainer,
+	smooth: true,
+	lerp: 0.03
+});
+scroll.on("scroll", (e) => {
+  if (e.scroll.y === 0) {
+    // إعادة اللون الأساسي عند أعلى الصفحة
+    scrollContainer.style.backgroundColor = ""; // يمكن تعيين اللون الأساسي هنا إذا كان محدداً
+  } else {
+    // تغيير لون الخلفية عند النزول
+    scrollContainer.style.backgroundColor = '#00000088';
+  }
+});
+//  scroll.on("scroll", (e) => {
+// 	scrollContainer.style.backgroundColor ='#00000088';
+// 		"hsl(" + 100 + e.scroll.y / 5 + ",40%,30%)";
+//  });
+</script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+
+<script>
+    $(document).ready(function (){
+        $('#a-img1').on({
+            mouseover: function () {
+                $('#img1').fadeIn('slow');
+            },
+            mouseout: function () {
+                $('#img1').fadeOut('slow');
+            }
+        });
+        $('#a-img2').on({
+            mouseover: function () {
+                $('#img2').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img2').fadeOut('slow');
+            }
+        });
+        $('#a-img3').on({
+            mouseover: function () {
+                $('#img3').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img3').fadeOut('slow');
+            }
+        });
+    });
+</script>
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<script>
+    let scrollThreshold = 1500; 
+     function show(a){
+        scrollThreshold = 1500; 
+        let overlay1=document.getElementById('after1');
+        let overlay2=document.getElementById('after2');
+        let overlay3=document.getElementById('after3');
+        let overlay4=document.getElementById('after4');
+
+        // Reset all overlays before showing the target one
+        closeService();
+
+        if (a == 'a1') {
+            overlay1.style.display = 'block'; 
+        setTimeout(function() {
+            overlay1.style.height = '23%'; // يمكنك ضبط الارتفاع حسب الحاجة
+            overlay1.style.opacity = '1'; // جعله مرئي
+        }, 10);
+         window.addEventListener('scroll', handleScroll);
+        }
+        else if(a == 'a2'){
+            overlay2.style.display = 'block'; 
+            scrollThreshold = scrollThreshold + 1000; 
+        setTimeout(function() {
+            overlay2.style.height = '23%'; // يمكنك ضبط الارتفاع حسب الحاجة
+            overlay2.style.opacity = '1'; // جعله مرئي
+        }, 10);
+            window.addEventListener('scroll', handleScroll);
+        }
+        else if(a == 'a3'){
+            overlay3.style.display='block';
+            scrollThreshold = scrollThreshold + 2000; 
+            setTimeout(function() {
+            overlay3.style.height = '23%'; // يمكنك ضبط الارتفاع حسب الحاجة
+            overlay3.style.opacity = '1'; // جعله مرئي
+        }, 10);
+            window.addEventListener('scroll', handleScroll);
+        }
+        else {
+            overlay4.style.display='block';
+            scrollThreshold = scrollThreshold + 3000;
+            setTimeout(function() {
+            overlay4.style.height = '23%'; // يمكنك ضبط الارتفاع حسب الحاجة
+            overlay4.style.opacity = '1'; // جعله مرئي
+        }, 10); 
+            window.addEventListener('scroll', handleScroll);
+        }
+     }
+     console.log(scrollThreshold , window.scrollY);
+     function closeService(){
+        let overlay1=document.getElementById('after1');
+        let overlay2=document.getElementById('after2');
+        let overlay3=document.getElementById('after3');
+        let overlay4=document.getElementById('after4'); 
+     
+        overlay1.style.display='none';
+        overlay1.style.height = '0'; 
+        overlay1.style.opacity = '0';
+       
+        overlay2.style.display='none';
+        overlay2.style.height = '0'; 
+        overlay2.style.opacity = '0';
+        
+        overlay3.style.display='none';
+        overlay3.style.height = '0'; 
+        overlay3.style.opacity = '0';
+       
+        overlay4.style.display='none';
+        overlay4.style.height = '0'; 
+        overlay4.style.opacity = '0'; 
+        
+        window.removeEventListener('scroll', handleScroll);
+     }
+     function handleScroll() {
+            // التحقق إذا تم تمرير المسافة المحددة
+            if (window.scrollY > scrollThreshold) {
+                closeService(); // إغلاق الـ overlay
+            }
+            console.log(scrollThreshold , window.scrollY);
+        }
+     
+</script>
+
+</body>
+
+
+</html>

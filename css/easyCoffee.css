@@ -1,0 +1,412 @@
+@font-face {
+    font-family:'brothers';
+    src:url('../fonts/easyCoffee/brothersignature-7bwnk.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+header{
+    background: none;
+}
+
+.logo {
+    margin-top: 4px;
+}
+.apac{
+    padding-right: 0px;
+}
+.inner-project{
+    margin-top: 30px;
+    padding-right: 0px;
+}
+section h1{
+    margin-left: 0px;
+}
+.inner-project .image-container {
+    position: relative;
+    width: 74rem;
+    height: 40rem;
+    float: inline-end;
+    background-color: #BC5B17;
+    border-radius: 50px 0px 0px 50px;
+    overflow: hidden; /* للتأكد أن المحتوى لا يتجاوز الحواف */
+}
+.inner-project .image-container img{
+    width: 60rem;
+    height: 40rem;
+    /* margin-left: 300px; */
+    /* border-radius: 64px; */
+    float: inline-end;
+    object-fit: cover;
+    border-radius: 50px 0px 0px 50px;
+}
+#header-overlay {
+    position: absolute;
+    top: 0;
+    width: 81%;
+    height: 100%;
+    display: block;
+    background: rgba(255, 255, 255, 0.404);
+    color: #FFF;
+    margin-left: 238px;
+    pointer-events: none; /* السماح بالتفاعل مع الصورة */
+    z-index: 2;
+    transition: mask-image 0.1s ease;
+    border-radius: 50px 0px 0px 50px;
+}
+
+ .back-link{
+  margin-left: 1200px;
+  font-size: 2rem;
+  text-decoration: underline;
+  letter-spacing: 5px;
+  padding-top: 10px;
+}
+.back-link .back-2{
+    color: #000;
+    text-decoration: underline;
+}
+.owner-info{
+    padding-top:100px;
+    padding-left: 30px;
+    font-size: 1.3rem;
+}
+.owner-info h4{
+    color: #BC5B17;
+}
+.owner-info .date{
+    padding-top: 350px;
+}
+
+.apac .Project-title{
+    position: absolute;
+    top:420px;
+    left:220px;
+    font-size: 2rem;
+    padding-right: 700px;
+    z-index: 2;
+    
+}
+.apac .Project-title h1{
+    font-size: 9rem;
+    font-family:'brothers';
+}
+.apac .Project-title p{
+   color: #ffffff;
+   text-shadow: 1px 1px 1px black;
+}
+.inner-project-details{
+    /* background: rgba(255, 255, 255,0.3); */
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.inner-project-details .card{
+    margin-left: 80px;
+    border-radius: 64px;
+    padding: 20px 40px;
+    width:45rem;
+    height:fit-content;
+    background-color: #BC5B17;
+    color: white;
+    font-size: 1.5rem;
+}
+.inner-project-details h2{
+    letter-spacing: 8px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.details > :nth-child(2){
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.details > :nth-child(3){
+    margin-top: 50px;
+    margin-left: 450px;
+}
+.logos{
+    background-color: #ffffff65;
+}
+.logos img{
+    width: 250px;
+    height: 250px;
+}
+.logos .last-logo img{
+    width: 400px;
+    height: 500px;
+}
+.logos>*{
+    padding-right: 0px;
+    margin-top: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.logos .logo-group{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-left: 10%;
+}
+.inner-project-img{
+    padding-bottom: 100px;
+}
+.inner-project-img .frames{
+    background: #66B2E3;
+    border: none;
+    border-radius: 0px 0px 0px 60px;
+}
+.inner-project-img .frames img{
+    width: 100%;
+    height: 100vh;
+}
+.inner-project-img .frames .frame:nth-child(2){
+    margin-top: 70px;
+}
+.inner-project-img .frames .frame:nth-child(3){
+    margin-top: 140px;
+}
+       
+.after a{
+    color:#fff
+}
+.after a:hover{
+    color:#ffeb3b;
+}
+
+.projects>*{
+    padding-right: 0px;
+    margin-top: 50px;
+}
+.projects .slide2{
+    border-radius:0px 50px 0px 0px;
+    width: 80%;
+    height: 100%;
+    border: none;
+}
+
+.project-slides1{
+    height: 20vh;
+    display:flex;
+    background-color: #B8AEAD;
+    border-radius: 0px 50px 0px 0px;
+    color: #fff;
+    position: sticky;
+    top:0px;
+}
+.project-slides1 h5 > h3 > p > img{
+    padding: 20px;
+}
+
+.project-slides{
+    height: 90vh;
+    margin-top: -80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 0px 60px 0px 0px;
+    color: #000;
+    position: sticky;
+    top:100px;
+    /* padding: 50px 20px; */
+    border: none;
+}
+.project-slides .card-body{
+    color:#000;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-items: start;
+    padding: 0px 30px;
+}
+.project-grid img{
+    height: 70.5vh;
+    border: none;
+    border-radius: 0px;
+}
+.project-grid > :nth-child(2) {
+   margin-top: 50px;
+}
+.project-grid > :nth-child(3) {
+    margin-top: 100px;
+ }
+ .project-grid > :nth-child(4) {
+    margin-top: 150px;
+ }
+.strategy{
+    background: inherit;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem; 
+    line-height: 30px;
+}
+.strategy h1{
+    margin-left: 0;
+    text-decoration: underline;
+}
+.strategy li{
+    padding-top: 20px;
+}
+.img-card-1{
+    background-image: url(../img/easyCoffee/photo1.webp);
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    border: none;
+    border-radius: 0px 50px 0px 0px;
+}
+ .img-card-1 #title-easy{
+    font-size: 9rem;
+    color: #fff;
+    margin-top: 12vh;
+    margin-left: 50px;
+    font-family:'brothers';
+}
+.img-card-1 img{
+    width: 250px;
+    height: 250px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.inner-title-2 .card{
+    background: inherit;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.inner-title-2 .card-body {
+    margin-left: 500px;
+    margin-right: 150px;
+    word-spacing: 1px;
+}
+.inner-title-2 h1{
+    text-decoration: underline;
+}
+
+.inner-project-slides{
+    padding:0px 200px;
+}
+
+.inner-project-slides .img-fluid{
+    /* height: 70vh;*/
+    margin-top: -20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+
+    position: sticky;
+    top:100px;
+}
+.distributor-photo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 0px 50px;
+    border: none;
+    background-image: url(../img/easyCoffee/distributor-photo.webp);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.sell-operation{
+    /* padding: 50px; */
+    margin-left: 0px;
+    border-radius: 50px;
+}
+.sell-operation img{
+    width:100%;
+    height: 80vh;
+}
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .carousel {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, .3);
+  }
+  .item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    & img {
+      /* object-fit: cover; */
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .invoice-logo{
+    margin-top: 80px;
+  }
+
+.next-project{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 0px 50px;
+    border: none;
+    background-image: url(../img/apaq/sky.webp);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.next-project .title{
+    padding: 400px 00px 0px 50px;
+    color: #fff;
+}
+.next-project h1{
+    font-size: 5rem;
+}
+.next-project p{
+    font-size: 1.5rem;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-180deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .bottom{
+    padding-left: 350px;
+    padding-bottom: 100px;
+  }
+  .bottom img {
+      height: 50%;
+      animation: rotate 7s infinite linear;
+     
+  }
+  .last-p{
+    font-size: 3rem;
+    color: #ffffff;
+    padding-top: 70px;
+    padding-left: 50px;
+  }
+  #last-logo{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: calc(100% - 80px);
+    /* top: 10px; */
+    margin-top: 40px;
+  }
+
+
+  

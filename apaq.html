@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I_web</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inner-style.css">
+    <link rel="stylesheet" href="css/apaq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="preloader">
+    <img class="logo" src="img/logo.svg" alt="logo">
+</div>
+<canvas id="backgroundCanvas"></canvas>
+<div id="magnifier"></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- <div class="icon-bar">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+</div> -->
+<header>  
+    <div class="container-fluid apac">
+        <div class="row">
+            <div class="col-6">
+                <img class="logo" src="img/logo.svg" alt="logo">
+            </div>
+        </div>
+        <div class="row back-link">
+            <a href="profile.html">Back to work</a>
+        </div>
+        <div class="row">
+            <div class="col-4 owner-info" data-aos='zoom-in'>
+                <h4>Client</h4>
+                <p>fadi</p>
+                <h4>Deliverables</h4>
+                <p>Visual Identity
+                    <br>Landing page
+                    </p>
+                <p class="date">Date:14/8/2024</p>
+            </div>
+            <div class="col-8 inner-project">
+                <div class="image-container" data-aos='zoom-in'>
+                    <div id="header-overlay"></div>
+                    <img src="img/apaq/sky.webp" alt="hh">
+                </div>
+                <div class="Project-title" data-aos='zoom-in'>
+                    <h1>Apaq-W</h1>
+                    <p>A sustainable, healthy, biodiverse, and 
+                        affordable food system.<p>
+                </div>
+            </div>
+        </div>
+           
+    </div>
+</header>
+<main>
+    <div class="toggle-container">
+        <button id='main-button' class="toggle-button" onclick="toggleMenu()">
+            <i id='fa1' class="fa-solid fa-bars-staggered"></i>
+            <i id='fa2' class="fa-solid fa-close"></i>
+        </button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a  href="about-us.html">AboutUs</a>
+            <a  href="services.html">Services</a>
+            <a  href="#">Blogs</a>
+            <a  href="profile.html">Projects</a>
+            <a href="contact-us.html">ContactUs</a>
+        </div>
+    </div>
+    <section class="inner-project-details">
+        <div class="details">
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Context</u>
+                    </h2>
+                    <p class="pt-2">
+                        In a whirlwind communication campaign centered around milk, 
+                        we partnered with Air to tackle two ambitious missions:</p>
+                    <ul type="disk">
+                        <li>Craft a captivating series of banners</li>
+                        <li>Launch a dynamic web platform</li>
+                    </ul>
+                    <p>
+                        With tight deadlines and numerous revisions, the pressure was on.
+                    </p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Solution</u>
+                    </h2>
+                    <p class="pt-2">
+                        We embraced the challenge head-on by building the website from scratch, bypassing the constraints of a CMS.
+                         This approach granted us complete creative freedom, allowing us to tailor every detail to perfection.
+                    </p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-down" >
+                <div class="card-body">
+                    <h2>
+                        <u>Result</u>
+                    </h2>
+                    <p class="pt-2">
+                        The result? A sleek, efficient website, born from a seamless collaboration with the Air design team.
+                         It’s designed to handle a surge of visitors effortlessly, 
+                        ensuring a smooth and engaging user experience during its peak online period.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inner-project-img">
+        <div class="row frames">
+            <div class="col-4 frame" data-aos="fade-down">
+                <img class="card-img" src="img/apaq/frame1.webp" alt="Card image">
+            </div>
+            <div class="col-4 frame"  data-aos="fade-down" data-aos-delay="200">
+                <img class="card-img" src="img/apaq/frame3.webp" alt="Card image">
+            </div>
+            <div class="col-4 frame"  data-aos="fade-down" data-aos-delay="400">
+                <img class="card-img" src="img/apaq/frame2.webp" alt="Card image">
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                <div class="card strategy" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>STRATEGY</h1>
+                        <p class="pt-5">A Canvas of Creativity: The design team, guided by a thoughtful strategy,
+                             painted an integrated website masterpiece based on user experience principles. 
+                             </p>
+                             <p class="pt-2"> Each page is a canvas of essential information, presented in a smooth, memorable,
+                                and delightful manner.</p>
+                                <p class="pt-2">The colors symbolize health and nature, while natural, 
+                                    unfiltered images stir emotions and memories,
+                                   all with a touch of elegance. Banners, artfully incorporated, enhance the site’s allure and functionality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-d-section container-fluid" id="la-campagne">
+            <div class="second-main-container">
+                <div class="content" data-aos="fade-down">
+                    “Our own milk” is an Apaq-W campaign which aims to promote the benefits of milk as part of a healthy
+                    and sustainable diet.
+                </div>
+                <div class="video-side" data-aos="zoom-in-down">
+                    <video src="video/apaq/apaq.mp4" class="video-1" controls></video>
+                    <div class="video-img">
+                        <img src="img/apaq/video-img.webp" alt="" />
+                    </div>
+                    <div class="btn-container">
+                        <svg width="100%" height="100%" viewBox="0 0 72 82" fill="#66B2E3"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M71.1612 40.9997L0.801717 81.9453L0.521595 0.539362L71.1612 40.9997Z"
+                                fill="#fff" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 inner-title-2">
+            <div class="col-12 mb-3 mb-sm-0">
+                <div class="card" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>The advantages of website banners:</h1>
+                        <p class="pt-5">Spotlight Magic: Instantly grabs your visitors’ attention like a spotlight on a stage.</p>
+                        <p class="pt-2">  Brand Storytelling: Weave your brand’s tale with colors, logos, and catchy messages.</p>
+                        <p class="pt-2">   Audience Whisperer: Tailor your banners to speak directly to your target audience.</p>
+                        <p class="pt-2">   Budget-Friendly Brilliance: Achieve big results without breaking the bank.</p>
+                        <p class="pt-2">   Insightful Tracking: Keep tabs on your banner’s performance with real-time data.</p>
+                        <p class="pt-2">   Visual Delight: Make your site a feast for the eyes, guiding visitors effortlessly.</p>
+                        <p class="pt-2">   Dynamic Updates: Easily refresh your banners to keep your content lively and current.</p>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  projects">
+            <div class="col-12">
+                <div class="card project-slides1">  
+                </div>
+                <div class="card project-slides">
+                    <img class="card-img slide2" src="img/apaq/slide2.webp" > 
+                </div>
+                <div class="card project-slides">
+                    <img class="card-img slide2" src="img/apaq/slide3.webp" >                              
+                </div>
+                <div class="card project-slides project-grid">
+                    <img class="card-img" src="img/apaq/slide4a.webp" alt="Card image" >
+                    <img class="card-img" src="img/apaq/slide4b.webp" alt="Card image" >
+                    <img class="card-img" src="img/apaq/slide4c.webp" alt="Card image" >
+                </div>
+                <div class="card project-slides project-grid">
+                    <img class="card-img" src="img/apaq/slide1a.webp" alt="Card image" data-aos="fade-down">
+                    <img class="card-img" src="img/apaq/slide1b.webp" alt="Card image" data-aos="fade-down">
+                    <img class="card-img" src="img/apaq/slide1c.webp" alt="Card image" data-aos="fade-down">
+                </div>
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="https://xn--notrelaitnous-xdb.be/" target="_blank">View Site</a>
+        </div>
+        <div class="row m-5">
+            <div class="col-md-6 col-12 mb-3 mb-sm-0">
+                <div class="card strategy" data-aos="zoom-in-down">
+                    <div class="card-body">
+                        <h1>Project content</h1>
+                        <p class="pt-5">Enhancing Our Impact: The Three Pillars of Sustainability</p>
+                        <p class="pt-2">Our journey towards sustainable food is anchored by three vital pillars: social,
+                             environmental, and economic. We aim to deliver nutritious food that cherishes biodiversity, 
+                             promotes fairness, and remains economically accessible to all.<br>
+                            What is Sustainable Food?</p>
+                        <p class="pt-2"> Imagine a food system that guarantees food security and nutrition for everyone,
+                             without jeopardizing the essential economic, social, and environmental foundations for future
+                              generations.</p>
+                        <p class="pt-2">This means being cost-effective, economically sustainable, socially beneficial,
+                            and environmentally friendly.</p>
+                        <p class="pt-2">  Key Pillars:</p>
+                        <ul type="disk">
+                            <li>Ecological: Nurturing nature by ensuring a positive or neutral impact on natural resources.</li>
+                            <li>Social: Creating widespread benefits that uplift society.</li>
+                            <li>Economic: Maintaining cost-effectiveness and economic sustainability throughout the process.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="odoo.html">Next project</a>
+        </div>
+        <div class="card next-project" data-aos='fade-down'>
+            <div class="title" data-aos='zoom-in'>
+                <h1>L-EXPERT</h1>
+                <p>Your Real Estate Journey Starts Here<p>
+            </div>
+        </div>
+        <div class="row back-link">
+            <a class="back-2" href="profile.html">Back to work</a>
+        </div>
+    </section>
+    <div class="row container-fluid">
+        <div class="col-6">
+           <p class="last-p">We Would Love <br>To Work With You.</p>
+        </div>
+        <div class="col-6">
+        <div class="bottom">
+           <img src="img/apaq/circle-logo.webp" width="300px" height="300px" alt="Example Image" />
+        </div>
+       </div>
+     </div>
+</main>
+<footer class="footer text-white pt-3">
+    <div class="container-fluid">
+        <div class="row first-footer">
+            <div class="col-md-2">
+                <img id="footer-logo" src="img/footer-logo.svg" alt="footer-logo"  >
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="about-us.html" class="text-white">AboutUs</a></li>
+                    <li><a href="services.html" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Blogs</a></li>
+                    <li><a href="profile.html" class="text-white">Projects</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Address</h5>
+                <p class="pt-3">Rue Ry de Brabant 58<br>7170 Bellecourt BE</p>
+                <p class="pt-3">+32 478 40 22 91<br>info@i-web.be</p>
+            </div>
+            <div class="col-md-6 form-col">
+                <h5>Contact Us</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone">
+                    </div>
+                    <div class="form-group pt-2">
+                        <button type="submit" class="btn btn-outline-light pl-5">Send</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4 pt-3 copy">
+            <div class="col-12">
+                <p>© i-Web - digital agency 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/e1c1fbeb79.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/shader-apaq.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#a-img1').on({
+            mouseover: function () {
+                $('#img1').fadeIn('slow');
+            },
+            mouseout: function () {
+                $('#img1').fadeOut('slow');
+            }
+        });
+        $('#a-img2').on({
+            mouseover: function () {
+                $('#img2').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img2').fadeOut('slow');
+            }
+        });
+        $('#a-img3').on({
+            mouseover: function () {
+                $('#img3').fadeIn('slow');
+
+            },
+            mouseout: function () {
+                $('#img3').fadeOut('slow');
+            }
+        });
+    });
+</script>
+<script>
+const headerOverlay = document.querySelector('#header-overlay');
+const imageContainer = document.querySelector('.inner-project');
+
+imageContainer.addEventListener('mousemove', (e) => {
+    const rect = imageContainer.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+
+    // نصف قطر الدائرة
+    const radius = 150;
+
+    // تحديد الحد الأدنى والأقصى للإحداثيات لمنع تجاوز الحدود
+    const maxX = rect.width - radius; // أقصى إحداثي X
+    const maxY = rect.height - radius; // أقصى إحداثي Y
+    const minX = radius; // أدنى إحداثي X
+    const minY = radius; // أدنى إحداثي Y
+
+    // منع تجاوز الدائرة للحدود
+    // if (x < minX) x = minX;
+    // if (x > maxX) x = maxX;
+    // if (y < minY) y = minY;
+    // if (y > maxY) y = maxY;
+
+    // تحديث موقع التدرج الدائري لإزالة الشفافية حول المؤشر
+    headerOverlay.style.maskImage = `radial-gradient(circle at ${x}px ${y}px, transparent ${radius}px, black ${radius + 1}px)`;
+});
+
+imageContainer.addEventListener('mouseleave', () => {
+    // إعادة الشفافية كما كانت عند خروج الماوس
+    headerOverlay.style.maskImage = 'none';
+});
+
+</script>
+<script>
+    $('document').ready(function(){
+     $('.testimonial-d-section .video-side .btn-container>svg').on('click', function () {
+         $('.testimonial-d-section .video-side .video-img').fadeOut();
+         $('.testimonial-d-section .video-side .video-1').trigger('play');
+         $(this).parent().fadeOut();
+     })
+     $('.testimonial-d-section .video-side .video-1').on('ended', function () {
+         $('.testimonial-d-section .video-side .video-img').fadeIn();
+         $('.testimonial-d-section .video-side .btn-container>svg').parent().fadeIn();
+     });
+    });
+ </script>
+</body>
+
+
+</html>
